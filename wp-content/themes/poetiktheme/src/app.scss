@@ -1,6 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
-$primary-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&family=Roboto:wght@400;700&family=Rye&display=swap');
 
-header h1 {
-    font-family: 'Rye', cursive;
+
+/*************************
+*** EXPERIMENTING FONTS **
+*************************/
+
+// font-family: 'Rammetto One', cursive;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Rye', cursive;
+
+/*************************
+***** VARIABLES *********
+*************************/
+
+// Typrography
+
+$logo-font-family: 'Rye', cursive;
+$heading-font-family: 'Rammetto One', cursive;
+$primary-font-family: 'Roboto', sans-serif;
+$text-font-weight: 700;
+
+// Colors
+
+$bg-color: black;
+$primary-color: white;
+
+/*************************
+***** RESET **************
+*************************/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
+
+body {
+    font-family: $primary-font-family;
+    font-size: 1.31235rem; // 21px;
+    line-height: 1.6;
+    background-color: $bg-color;
+    color: $primary-color;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+/*************************
+***** UTILITY CLASSES ****
+*************************/
+
+h1,
+h2,
+h3 {
+    font-family: $heading-font-family;
+}
+
+
+
+// section padding 
+// .container {margin-inline: auto; width: min(90%, 70.5rem);

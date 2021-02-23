@@ -1,4 +1,41 @@
-@import url(https://fonts.googleapis.com/css2?family=Rye&display=swap);
-header h1 {
-  font-family: "Rye", cursive;
+@import url(https://fonts.googleapis.com/css2?family=Rammetto+One&family=Roboto:wght@400;700&family=Rye&display=swap);
+/*************************
+*** EXPERIMENTING FONTS **
+*************************/
+/*************************
+***** VARIABLES *********
+*************************/
+/*************************
+***** RESET **************
+*************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.31235rem;
+  line-height: 1.6;
+  background-color: black;
+  color: white;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Rammetto One", cursive;
+}
+
+/*************************
+***** UTILITY CLASSES ****
+*************************/
