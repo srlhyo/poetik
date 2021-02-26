@@ -100,7 +100,7 @@ h3 {
   visibility: hidden;
 }
 
-.about__title {
+.title {
   text-align: center;
   padding: 150px 0 30px;
 }
@@ -172,4 +172,26 @@ h3 {
   width: 20px;
   align-self: flex-end;
   margin-bottom: 30px;
+}
+
+.btn {
+  width: 265px;
+  height: 30px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.btn_listen {
+  border: 1px solid white;
+}
+
+.btn_download {
+  border: 1px solid #F5D39C;
+}
+
+.btn-wrapper {
+  text-align: center;
 }

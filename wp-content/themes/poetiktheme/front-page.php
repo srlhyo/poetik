@@ -34,7 +34,7 @@
     </header>
 
     <section class="about">
-        <h2 class="about__title">know poetik</h2>
+        <h2 class="title">know poetik</h2>
         <span class="about__span"></span>
             <div class="about__desktop">
                 <p>Poetik started his music career back in 2005, with a group called Freestyle Family - a union of various elements fom different groups in the UK. They all had the same objectives: expand the Portuguese HipHop culture in the UK. Along with the 3FS (Freestyle Family) Poetik lunch 5 mixtapes: Senoro total; The F-files; Taking Over vol 1, Taking Over vol 2 and Family Bizness. </p>
@@ -64,24 +64,25 @@
     </section>
 
     <section class="videos">
-        <h2 class="videos__title">videos</h2>
+        <h2 class="title">videos</h2>
 
         <div class="videos__slider">
         </div>
     </section>
 
     <section class="music">
-        <h2 class="music__title">music</h2>
+        <h2 class="title">music</h2>
 
         <div class="music__slider">
         </div>
-
-        <button class="btn btn__listen">listen</button>
-        <button class="btn btn__download">download</button>
+        <div class="btn-wrapper">
+            <button class="btn btn_listen">listen</button>
+            <button class="btn btn_download">download</button>
+        </div>
     </section>
 
     <section class="tour">
-        <h2 class="tour__title">tour</h2>
+        <h2 class="title">tour</h2>
 
         <div class="tour__cards tour__cards_mobile">
             <div class="tour__card">
@@ -228,7 +229,7 @@
             <span>x</span>
         </div>
 
-        <h2 class="modal2_title">tour</h2>
+        <h2 class="title">tour</h2>
 
         <div class="modal2__cards modal__cards_mobile">
             <div class="modal2__card">
@@ -306,7 +307,7 @@
 </section>
 
     <section class="photos">
-        <h2 class="photos__title">photos</h2>
+        <h2 class="title">photos</h2>
 
         <div class="photos__slider">
         </div>
@@ -478,7 +479,7 @@
     </section>
 
     <section class="newsletter">
-        <h2 class="newsletter__title ">stay up to date</h2>
+        <h2 class="title ">stay up to date</h2>
         <h2 class="newsletter__title newsletter__title_mobile">newsletter</h2>
 
         <form class="newsletter__form">
@@ -497,7 +498,7 @@
     </section>
 
     <footer class="footer">
-        <h3 class="footer-__title">follow poetik</h3>
+        <h3 class="title">follow poetik</h3>
         
         <ul class="social-icons social-icons_footer">
             <li><a href="#">facebook</a></li>
