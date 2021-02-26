@@ -30,12 +30,20 @@ p {
   margin: 0;
 }
 
+/*************************
+***** UTILITY CLASSES ****
+*************************/
 h1,
 h2,
 h3 {
   font-family: "Rammetto One", cursive;
 }
 
-/*************************
-***** UTILITY CLASSES ****
-*************************/
+.image__slide img {
+  width: 100%;
+  height: auto;
+}
+
+.splide__arrows button {
+  background-color: #F5D39C;
+}

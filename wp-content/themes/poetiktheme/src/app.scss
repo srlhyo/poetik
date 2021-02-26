@@ -61,7 +61,15 @@ h3 {
     font-family: $heading-font-family;
 }
 
+.image__slide img {
+	width : 100%;
+	height: auto;
+}
 
+.splide__arrows button {
+    background-color: #F5D39C;
+    // fill: #DCD1CD;
+}
 
 // section padding 
 // .container {margin-inline: auto; width: min(90%, 70.5rem);

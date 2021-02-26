@@ -13,30 +13,41 @@
     <header>
         <h1 class="logo">poetik</h1>
 
-        <ul class="artist__social-icons">
+        <ul class="social-icons">
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
             <li><a href="#"><i class="fab fa-soundcloud"></i></a></li>
         </ul>
 
-        <div class="artist__head-slider-wrapper">
-            <div class="artist__head-slider">
-                <img src="" alt="poetik on the bridge">
+        <div id="image-slider" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/bridge.jpeg">' ?>
+                    </li>
+                    <li class="splide__slide">
+                        <?php echo '<img src="' . get_template_directory_uri() . '/src/images/tag-team.jpg">' ?>
+                    </li>
+                    <li class="splide__slide">
+                        <?php echo '<img src="' . get_template_directory_uri() . '/src/images/new.jpg">' ?>
+                    </li>
+                </ul>
             </div>
         </div>
+
         <div class="scrolldown-arrow">
-            <i></i>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </header>
 
-    <section class="artist__about">
-        <h2 class="artist__title">know poetik</h2>
+    <section class="about">
+        <h2 class="about__title">know poetik</h2>
 
         <p>Poetik started his music career back in 2005, with a group called Freestyle Family - a union of various elements fom different groups in the UK. They all had the same objectives: expand the Portuguese HipHop culture in the UK. Along with the 3FS (Freestyle Family) Poetik lunch 5 mixtapes: Senoro total; The F-files; Taking Over vol 1, Taking Over vol 2 and Family Bizness. </p>
 
-        <div class="artist__read-more">
-            <p><a href="#">read more</a></p>
+        <div class="about__read-more_no-desktop">
+            <a href="#">read more</a>
         </div>
     </section>
 
@@ -60,169 +71,179 @@
         </div>
     </div>
 
-    <section class="artist__videos">
-        <h2 class="artist__title">videos</h2>
+    <section class="videos">
+        <h2 class="videos__title">videos</h2>
 
-        <div class="artist__videos-slider">
+        <div class="videos__slider">
+        </div>
+
+        <div id="videosplide" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=wYWz93lP2L8">
+                        <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/barulho.jpg">' ?>
+                    </li>
+                    <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=VVu2f4BY5uU">
+                        <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/bridge.jpeg">' ?>
+                    </li>
+                    <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=WQ0v5AEAOhA">
+                        <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/elite2.jpg">' ?>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <section class="artist__music">
-        <h2 class="artist__title">music</h2>
+    <section class="music">
+        <h2 class="music__title">music</h2>
 
-        <div class="artist__music-slider">
+        <div class="music__slider">
         </div>
 
-        <div class="btn-group">
-            <button class="btn btn--listen">listen</button>
-            <button class="btn btn--download">download</button>
-        </div>
+        <button class="btn btn__listen">listen</button>
+        <button class="btn btn__download">download</button>
     </section>
 
-    <section class="artist__tour">
-        <h2 class="artist__title">tour</h2>
+    <section class="tour">
+        <h2 class="tour__title">tour</h2>
 
-        <div class="artist__tour-cards artist__tour-cards--mobile">
-            <div class="artist__tour-card">
-                    <p class="artist__tour-card-date">jun 2</p>
-                    <h3 class="artist__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="artist__tour-card-venue">principality arena</p>
-                    <p class="artist__tour-card-date">rescheduled date**</p>
-                    <p class="artist__tour-card-ticket-link">tickets</p>
+        <div class="tour__cards tour__cards_mobile">
+            <div class="tour__card">
+                <p class="tour__date">jun 2</p>
+                <h3 class="tour__city">cardiff, cf, uk</h3>
+                <p class="tour__venue">principality arena</p>
+                <p class="tour__info">rescheduled date**</p>
+                <a href="#" class="tour__tickets">tickets</a>
             </div>
-            <div class="artist__tour-card">
-                    <p class="artist__tour-card-date">jun 2</p>
-                    <h3 class="artist__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="artist__tour-card-venue">principality arena</p>
-                    <p class="artist__tour-card-date">rescheduled date**</p>
-                    <p class="artist__tour-card-ticket-link">tickets</p>
+            <div class="tour__card">
+                <p class="tour__date">jun 2</p>
+                <h3 class="tour__city">cardiff, cf, uk</h3>
+                <p class="tour__venue">principality arena</p>
+                <p class="tour__info">rescheduled date**</p>
+                <a href="#" class="tour__tickets">tickets</a>
             </div>
-            <div class="artist__tour-card">
-                    <p class="artist__tour-card-date">jun 2</p>
-                    <h3 class="artist__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="artist__tour-card-venue">principality arena</p>
-                    <p class="artist__tour-card-date">rescheduled date**</p>
-                    <p class="artist__tour-card-ticket-link">tickets</p>
+            <div class="tour__card">
+                <p class="tour__date">jun 2</p>
+                <h3 class="tour__city">cardiff, cf, uk</h3>
+                <p class="tour__venue">principality arena</p>
+                <p class="tour__info">rescheduled date**</p>
+                <a href="#" class="tour__tickets">tickets</a>
             </div>
         </div>
 
-        <div class="artist__tour-cards artist__tour-cards--tablet">
-            <div class="artist__tour-card">
-                    <p class="artist__tour-card-date">jun 2</p>
-                    <h3 class="artist__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="artist__tour-card-venue">principality arena</p>
-                    <p class="artist__tour-card-date">rescheduled date**</p>
-                    <p class="artist__tour-card-ticket-link">tickets</p>
+        <div class="tour__cards tour__cards_tablet">
+        <div class="tour__card">
+                <p class="tour__date">jun 2</p>
+                <h3 class="tour__city">cardiff, cf, uk</h3>
+                <p class="tour__venue">principality arena</p>
+                <p class="tour__info">rescheduled date**</p>
+                <a href="#" class="tour__tickets">tickets</a>
             </div>
-            <div class="artist__tour-card">
-                    <p class="artist__tour-card-date">jun 2</p>
-                    <h3 class="artist__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="artist__tour-card-venue">principality arena</p>
-                    <p class="artist__tour-card-date">rescheduled date**</p>
-                    <p class="artist__tour-card-ticket-link">tickets</p>
+            <div class="tour__card">
+                <p class="tour__date">jun 2</p>
+                <h3 class="tour__city">cardiff, cf, uk</h3>
+                <p class="tour__venue">principality arena</p>
+                <p class="tour__info">rescheduled date**</p>
+                <a href="#" class="tour__tickets">tickets</a>
             </div>
-            <div class="artist__tour-card">
-                    <p class="artist__tour-card-date">jun 2</p>
-                    <h3 class="artist__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="artist__tour-card-venue">principality arena</p>
-                    <p class="artist__tour-card-date">rescheduled date**</p>
-                    <p class="artist__tour-card-ticket-link">tickets</p>
+            <div class="tour__card">
+                <p class="tour__date">jun 2</p>
+                <h3 class="tour__city">cardiff, cf, uk</h3>
+                <p class="tour__venue">principality arena</p>
+                <p class="tour__info">rescheduled date**</p>
+                <a href="#" class="tour__tickets">tickets</a>
             </div>
-
-            <div class="artist__tour-card">
-                    <p class="artist__tour-card-date">jun 2</p>
-                    <h3 class="artist__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="artist__tour-card-venue">principality arena</p>
-                    <p class="artist__tour-card-date">rescheduled date**</p>
-                    <p class="artist__tour-card-ticket-link">tickets</p>
+            <div class="tour__card">
+                <p class="tour__date">jun 2</p>
+                <h3 class="tour__city">cardiff, cf, uk</h3>
+                <p class="tour__venue">principality arena</p>
+                <p class="tour__info">rescheduled date**</p>
+                <a href="#" class="tour__tickets">tickets</a>
             </div>
-            <div class="artist__tour-card">
-                    <p class="artist__tour-card-date">jun 2</p>
-                    <h3 class="artist__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="artist__tour-card-venue">principality arena</p>
-                    <p class="artist__tour-card-date">rescheduled date**</p>
-                    <p class="artist__tour-card-ticket-link">tickets</p>
+            <div class="tour__card">
+                <p class="tour__date">jun 2</p>
+                <h3 class="tour__city">cardiff, cf, uk</h3>
+                <p class="tour__venue">principality arena</p>
+                <p class="tour__info">rescheduled date**</p>
+                <a href="#" class="tour__tickets">tickets</a>
             </div>
-            <div class="artist__tour-card">
-                    <p class="artist__tour-card-date">jun 2</p>
-                    <h3 class="artist__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="artist__tour-card-venue">principality arena</p>
-                    <p class="artist__tour-card-date">rescheduled date**</p>
-                    <p class="artist__tour-card-ticket-link">tickets</p>
-            </div>
-        </div>
-
-        <div class="artist__tour-cards artist__tour-cards--desktop">
-            <div class="artist__tour-card">
-                    <p class="artist__tour-card-date">jun 2</p>
-                    <h3 class="artist__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="artist__tour-card-venue">principality arena</p>
-                    <p class="artist__tour-card-date">rescheduled date**</p>
-                    <p class="artist__tour-card-ticket-link">tickets</p>
-            </div>
-            <div class="artist__tour-card">
-                    <p class="artist__tour-card-date">jun 2</p>
-                    <h3 class="artist__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="artist__tour-card-venue">principality arena</p>
-                    <p class="artist__tour-card-date">rescheduled date**</p>
-                    <p class="artist__tour-card-ticket-link">tickets</p>
-            </div>
-            <div class="artist__tour-card">
-                    <p class="artist__tour-card-date">jun 2</p>
-                    <h3 class="artist__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="artist__tour-card-venue">principality arena</p>
-                    <p class="artist__tour-card-date">rescheduled date**</p>
-                    <p class="artist__tour-card-ticket-link">tickets</p>
-            </div>
-
-            <div class="artist__tour-card">
-                    <p class="artist__tour-card-date">jun 2</p>
-                    <h3 class="artist__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="artist__tour-card-venue">principality arena</p>
-                    <p class="artist__tour-card-date">rescheduled date**</p>
-                    <p class="artist__tour-card-ticket-link">tickets</p>
-            </div>
-            <div class="artist__tour-card">
-                    <p class="artist__tour-card-date">jun 2</p>
-                    <h3 class="artist__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="artist__tour-card-venue">principality arena</p>
-                    <p class="artist__tour-card-date">rescheduled date**</p>
-                    <p class="artist__tour-card-ticket-link">tickets</p>
-            </div>
-            <div class="artist__tour-card">
-                    <p class="artist__tour-card-date">jun 2</p>
-                    <h3 class="artist__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="artist__tour-card-venue">principality arena</p>
-                    <p class="artist__tour-card-date">rescheduled date**</p>
-                    <p class="artist__tour-card-ticket-link">tickets</p>
+            <div class="tour__card">
+                <p class="tour__date">jun 2</p>
+                <h3 class="tour__city">cardiff, cf, uk</h3>
+                <p class="tour__venue">principality arena</p>
+                <p class="tour__info">rescheduled date**</p>
+                <a href="#" class="tour__tickets">tickets</a>
             </div>
         </div>
 
-        <div class="artist__tour-card">
-                    <p class="artist__tour-card-date">jun 2</p>
-                    <h3 class="artist__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="artist__tour-card-venue">principality arena</p>
-                    <p class="artist__tour-card-date">rescheduled date**</p>
-                    <p class="artist__tour-card-ticket-link">tickets</p>
+        <div class="tour__cards tour__cards_desktop">
+            <div class="tour__card">
+                <p class="tour__date">jun 2</p>
+                <h3 class="tour__city">cardiff, cf, uk</h3>
+                <p class="tour__venue">principality arena</p>
+                <p class="tour__info">rescheduled date**</p>
+                <a href="#" class="tour__tickets">tickets</a>
             </div>
-            <div class="artist__tour-card">
-                    <p class="artist__tour-card-date">jun 2</p>
-                    <h3 class="artist__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="artist__tour-card-venue">principality arena</p>
-                    <p class="artist__tour-card-date">rescheduled date**</p>
-                    <p class="artist__tour-card-ticket-link">tickets</p>
+            <div class="tour__card">
+                <p class="tour__date">jun 2</p>
+                <h3 class="tour__city">cardiff, cf, uk</h3>
+                <p class="tour__venue">principality arena</p>
+                <p class="tour__info">rescheduled date**</p>
+                <a href="#" class="tour__tickets">tickets</a>
             </div>
-            <div class="artist__tour-card">
-                    <p class="artist__tour-card-date">jun 2</p>
-                    <h3 class="artist__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="artist__tour-card-venue">principality arena</p>
-                    <p class="artist__tour-card-date">rescheduled date**</p>
-                    <p class="artist__tour-card-ticket-link">tickets</p>
+            <div class="tour__card">
+                <p class="tour__date">jun 2</p>
+                <h3 class="tour__city">cardiff, cf, uk</h3>
+                <p class="tour__venue">principality arena</p>
+                <p class="tour__info">rescheduled date**</p>
+                <a href="#" class="tour__tickets">tickets</a>
+            </div>
+            <div class="tour__card">
+                <p class="tour__date">jun 2</p>
+                <h3 class="tour__city">cardiff, cf, uk</h3>
+                <p class="tour__venue">principality arena</p>
+                <p class="tour__info">rescheduled date**</p>
+                <a href="#" class="tour__tickets">tickets</a>
+            </div>
+            <div class="tour__card">
+                <p class="tour__date">jun 2</p>
+                <h3 class="tour__city">cardiff, cf, uk</h3>
+                <p class="tour__venue">principality arena</p>
+                <p class="tour__info">rescheduled date**</p>
+                <a href="#" class="tour__tickets">tickets</a>
+            </div>
+            <div class="tour__card">
+                <p class="tour__date">jun 2</p>
+                <h3 class="tour__city">cardiff, cf, uk</h3>
+                <p class="tour__venue">principality arena</p>
+                <p class="tour__info">rescheduled date**</p>
+                <a href="#" class="tour__tickets">tickets</a>
+            </div>
+            <div class="tour__card">
+                <p class="tour__date">jun 2</p>
+                <h3 class="tour__city">cardiff, cf, uk</h3>
+                <p class="tour__venue">principality arena</p>
+                <p class="tour__info">rescheduled date**</p>
+                <a href="#" class="tour__tickets">tickets</a>
+            </div>
+            <div class="tour__card">
+                <p class="tour__date">jun 2</p>
+                <h3 class="tour__city">cardiff, cf, uk</h3>
+                <p class="tour__venue">principality arena</p>
+                <p class="tour__info">rescheduled date**</p>
+                <a href="#" class="tour__tickets">tickets</a>
+            </div>
+            <div class="tour__card">
+                <p class="tour__date">jun 2</p>
+                <h3 class="tour__city">cardiff, cf, uk</h3>
+                <p class="tour__venue">principality arena</p>
+                <p class="tour__info">rescheduled date**</p>
+                <a href="#" class="tour__tickets">tickets</a>
             </div>
         </div>
 
-        <div class="artist__tour-more-dates">
-            <p><a href="#">more dates</a></p>
+        <div class="tour__more-dates">
+            <a href="#">more dates</a>
         </div>
     </section>
 
@@ -233,330 +254,296 @@
 
         <h2 class="modal_title">tour</h2>
 
-        <div class="modal__tour-cards modal__tour-cards--mobile">
-            <div class="modal__tour-card">
-                    <p class="modal__tour-card-date">jun 2</p>
-                    <h3 class="modal__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="modal__tour-card-venue">principality arena</p>
-                    <p class="modal__tour-card-date">rescheduled date**</p>
-                    <p class="modal__tour-card-ticket-link">tickets</p>
+        <div class="modal__cards modal__cards_mobile">
+            <div class="modal__card">
+                <p class="modal__date">jun 2</p>
+                <h3 class="modal__city">cardiff, cf, uk</h3>
+                <p class="modal__venue">principality arena</p>
+                <p class="modal__info">rescheduled date**</p>
+                <p class="modal__tickets">tickets</p>
             </div>
-            <div class="modal__tour-card">
-                    <p class="modal__tour-card-date">jun 2</p>
-                    <h3 class="modal__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="modal__tour-card-venue">principality arena</p>
-                    <p class="modal__tour-card-date">rescheduled date**</p>
-                    <p class="modal__tour-card-ticket-link">tickets</p>
+            <div class="modal__card">
+                <p class="modal__date">jun 2</p>
+                <h3 class="modal__city">cardiff, cf, uk</h3>
+                <p class="modal__venue">principality arena</p>
+                <p class="modal__info">rescheduled date**</p>
+                <p class="modal__tickets">tickets</p>
             </div>
-            <div class="modal__tour-card">
-                    <p class="modal__tour-card-date">jun 2</p>
-                    <h3 class="modal__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="modal__tour-card-venue">principality arena</p>
-                    <p class="modal__tour-card-date">rescheduled date**</p>
-                    <p class="modal__tour-card-ticket-link">tickets</p>
+            <div class="modal__card">
+                <p class="modal__date">jun 2</p>
+                <h3 class="modal__city">cardiff, cf, uk</h3>
+                <p class="modal__venue">principality arena</p>
+                <p class="modal__info">rescheduled date**</p>
+                <p class="modal__tickets">tickets</p>
             </div>
 
-            <div class="modal__tour-card">
-                    <p class="modal__tour-card-date">jun 2</p>
-                    <h3 class="modal__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="modal__tour-card-venue">principality arena</p>
-                    <p class="modal__tour-card-date">rescheduled date**</p>
-                    <p class="modal__tour-card-ticket-link">tickets</p>
+            <div class="modal__card">
+                <p class="modal__date">jun 2</p>
+                <h3 class="modal__city">cardiff, cf, uk</h3>
+                <p class="modal__venue">principality arena</p>
+                <p class="modal__info">rescheduled date**</p>
+                <p class="modal__tickets">tickets</p>
             </div>
-            <div class="modal__tour-card">
-                    <p class="modal__tour-card-date">jun 2</p>
-                    <h3 class="modal__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="modal__tour-card-venue">principality arena</p>
-                    <p class="modal__tour-card-date">rescheduled date**</p>
-                    <p class="modal__tour-card-ticket-link">tickets</p>
+            <div class="modal__card">
+                <p class="modal__date">jun 2</p>
+                <h3 class="modal__city">cardiff, cf, uk</h3>
+                <p class="modal__venue">principality arena</p>
+                <p class="modal__info">rescheduled date**</p>
+                <p class="modal__tickets">tickets</p>
             </div>
-            <div class="modal__tour-card">
-                    <p class="modal__tour-card-date">jun 2</p>
-                    <h3 class="modal__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="modal__tour-card-venue">principality arena</p>
-                    <p class="modal__tour-card-date">rescheduled date**</p>
-                    <p class="modal__tour-card-ticket-link">tickets</p>
+            <div class="modal__card">
+                <p class="modal__date">jun 2</p>
+                <h3 class="modal__city">cardiff, cf, uk</h3>
+                <p class="modal__venue">principality arena</p>
+                <p class="modal__info">rescheduled date**</p>
+                <p class="modal__tickets">tickets</p>
             </div>
         </div>
 
-        <div class="modal__tour-cards modal__tour-cards--tablet">
-            <div class="modal__tour-card">
-                    <p class="modal__tour-card-date">jun 2</p>
-                    <h3 class="modal__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="modal__tour-card-venue">principality arena</p>
-                    <p class="modal__tour-card-date">rescheduled date**</p>
-                    <p class="modal__tour-card-ticket-link">tickets</p>
+        <div class="modal__cards modal__cards_mobile">
+            <div class="modal__card">
+                <p class="modal__date">jun 2</p>
+                <h3 class="modal__city">cardiff, cf, uk</h3>
+                <p class="modal__venue">principality arena</p>
+                <p class="modal__info">rescheduled date**</p>
+                <p class="modal__tickets">tickets</p>
             </div>
-            <div class="modal__tour-card">
-                    <p class="modal__tour-card-date">jun 2</p>
-                    <h3 class="modal__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="modal__tour-card-venue">principality arena</p>
-                    <p class="modal__tour-card-date">rescheduled date**</p>
-                    <p class="modal__tour-card-ticket-link">tickets</p>
+            <div class="modal__card">
+                <p class="modal__date">jun 2</p>
+                <h3 class="modal__city">cardiff, cf, uk</h3>
+                <p class="modal__venue">principality arena</p>
+                <p class="modal__info">rescheduled date**</p>
+                <p class="modal__tickets">tickets</p>
             </div>
-            <div class="modal__tour-card">
-                    <p class="modal__tour-card-date">jun 2</p>
-                    <h3 class="modal__tour-card-city">cardiff, cf, uk</h3>
-                    <p class="modal__tour-card-venue">principality arena</p>
-                    <p class="modal__tour-card-date">rescheduled date**</p>
-                    <p class="modal__tour-card-ticket-link">tickets</p>
+            <div class="modal__card">
+                <p class="modal__date">jun 2</p>
+                <h3 class="modal__city">cardiff, cf, uk</h3>
+                <p class="modal__venue">principality arena</p>
+                <p class="modal__info">rescheduled date**</p>
+                <p class="modal__tickets">tickets</p>
             </div>
         </div>
 
-        <div class="scroll-top scroll-top--modal">
-            <i></i>
+        <div class="scrolltop-arrow">
+            <i class="scrolltop-arrow__icon scrolltop-arrow__icon_mobile"></i>
         </div>
     </div>
 
-    <section class="artist__photos">
-        <h2 class="artist__title">photos</h2>
+    <section class="photos">
+        <h2 class="photos__title">photos</h2>
 
-        <div class="artist__photos-slider">
+        <div class="photos__slider">
         </div>
 
-        <div class="artist__photos-grid">
-            <div class="artist__photo">
+        <div class="photos__grid">
+            <div class="photos__photo">
                 <img src="" alt="">
             </div>
-            <div class="artist__photo">
+            <div class="photos__photo">
                 <img src="" alt="">
             </div>
-            <div class="artist__photo">
+            <div class="photos__photo">
                 <img src="" alt="">
             </div>
-            <div class="artist__photo">
+            <div class="photos__photo">
                 <img src="" alt="">
             </div>
-            <div class="artist__photo">
+            <div class="photos__photo">
                 <img src="" alt="">
             </div>
-            <div class="artist__photo">
+            <div class="photos__photo">
                 <img src="" alt="">
             </div>
-            <div class="artist__photo">
+            <div class="photos__photo">
                 <img src="" alt="">
             </div>
-            <div class="artist__photo">
+            <div class="photos__photo">
                 <img src="" alt="">
             </div>
         </div>
     </section>
 
-    <section class="artist__shop ">
-        <h2 class="artist__title">photos</h2>
+    <section class="shop ">
+        <h2 class="shop__title">photos</h2>
 
-        <div class="artist__shop-slider">
+        <div class="shop__slider">
         </div>
 
-        <div class="artist__item-price">
+        <div class="shop__item-price">
             <p><span>price: </span>21.89</p>
         </div>
-        <div class="btn-group">
-            <button class="btn btn--buy">download</button>
-        </div>
 
-        <div class="artist__shop-grid">
-            <div class="artist__cards-list">
-                <div class="artist__card">
-                    <div class="artist__item">
+        <button class="btn btn__buy">BUY</button>
+
+        <div class="shop__grid">
+            <div class="shop__card-wrapper">
+                <div class="shop__card">
+                    <div class="shop__item">
                         <img src="" alt="">
                     </div>
 
-                    <div class="artist__item-message">
+                    <div class="shop__item-message">
                         <p>sold out</p>
                     </div>
 
-                    <div class="artist__item-price">
+                    <div class="shop__item-price">
                         <p><span>price: </span>21.89</p>
                     </div>
 
-                    <div class="btn-group">
-                        <button class="btn btn--buy">download</button>
-                    </div>
+                    <button class="btn btn__buy">BUY</button>
                 </div>
-                <div class="artist__card">
-                    <div class="artist__item">
+                <div class="shop__card">
+                    <div class="shop__item">
                         <img src="" alt="">
                     </div>
 
-                    <div class="artist__item-message">
+                    <div class="shop__item-message">
                         <p>sold out</p>
                     </div>
 
-                    <div class="artist__item-price">
+                    <div class="shop__item-price">
                         <p><span>price: </span>21.89</p>
                     </div>
 
-                    <div class="btn-group">
-                        <button class="btn btn--buy">download</button>
-                    </div>
+                    <button class="btn btn__buy">BUY</button>
                 </div>
-                <div class="artist__card">
-                    <div class="artist__item">
+                <div class="shop__card">
+                    <div class="shop__item">
                         <img src="" alt="">
                     </div>
 
-                    <div class="artist__item-message">
+                    <div class="shop__item-message">
                         <p>sold out</p>
                     </div>
 
-                    <div class="artist__item-price">
+                    <div class="shop__item-price">
                         <p><span>price: </span>21.89</p>
                     </div>
 
-                    <div class="btn-group">
-                        <button class="btn btn--buy">download</button>
-                    </div>
+                    <button class="btn btn__buy">BUY</button>
                 </div>
-                <div class="artist__card">
-                    <div class="artist__item">
+                <div class="shop__card">
+                    <div class="shop__item">
                         <img src="" alt="">
                     </div>
 
-                    <div class="artist__item-message">
+                    <div class="shop__item-message">
                         <p>sold out</p>
                     </div>
 
-                    <div class="artist__item-price">
+                    <div class="shop__item-price">
                         <p><span>price: </span>21.89</p>
                     </div>
 
-                    <div class="btn-group">
-                        <button class="btn btn--buy">download</button>
-                    </div>
+                    <button class="btn btn__buy">BUY</button>
                 </div>
-                <div class="artist__card">
-                    <div class="artist__item">
+                <div class="shop__card">
+                    <div class="shop__item">
                         <img src="" alt="">
                     </div>
 
-                    <div class="artist__item-message">
+                    <div class="shop__item-message">
                         <p>sold out</p>
                     </div>
 
-                    <div class="artist__item-price">
+                    <div class="shop__item-price">
                         <p><span>price: </span>21.89</p>
                     </div>
 
-                    <div class="btn-group">
-                        <button class="btn btn--buy">download</button>
-                    </div>
+                    <button class="btn btn__buy">BUY</button>
                 </div>
-                <div class="artist__card">
-                    <div class="artist__item">
+                <div class="shop__card">
+                    <div class="shop__item">
                         <img src="" alt="">
                     </div>
 
-                    <div class="artist__item-message">
+                    <div class="shop__item-message">
                         <p>sold out</p>
                     </div>
 
-                    <div class="artist__item-price">
+                    <div class="shop__item-price">
                         <p><span>price: </span>21.89</p>
                     </div>
 
-                    <div class="btn-group">
-                        <button class="btn btn--buy">download</button>
-                    </div>
+                    <button class="btn btn__buy">BUY</button>
                 </div>
-                <div class="artist__card">
-                    <div class="artist_item">
+                <div class="shop__card">
+                    <div class="shop__item">
                         <img src="" alt="">
                     </div>
 
-                    <div class="artist__item-message">
+                    <div class="shop__item-message">
                         <p>sold out</p>
                     </div>
 
-                    <div class="artist__item-price">
+                    <div class="shop__item-price">
                         <p><span>price: </span>21.89</p>
                     </div>
 
-                    <div class="btn-group">
-                        <button class="btn btn--buy">download</button>
-                    </div>
+                    <button class="btn btn__buy">BUY</button>
                 </div>
-                <div class="artist__card">
-                    <div class="artist__item">
+                <div class="shop__card">
+                    <div class="shop__item">
                         <img src="" alt="">
                     </div>
 
-                    <div class="artist__item-message">
+                    <div class="shop__item-message">
                         <p>sold out</p>
                     </div>
 
-                    <div class="artist__item-price">
+                    <div class="shop__item-price">
                         <p><span>price: </span>21.89</p>
                     </div>
 
-                    <div class="btn-group">
-                        <button class="btn btn--buy">download</button>
-                    </div>
-                </div>
-                <div class="artist__card">
-                    <div class="artist__item">
-                        <img src="" alt="">
-                    </div>
-
-                    <div class="artist__item-message">
-                        <p>sold out</p>
-                    </div>
-
-                    <div class="artist__item-price">
-                        <p><span>price: </span>21.89</p>
-                    </div>
-
-                    <div class="btn-group">
-                        <button class="btn btn--buy">download</button>
-                    </div>
+                    <button class="btn btn__buy">BUY</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="artist__newsletter">
-        <h2 class="artist__title ">stay up to date</h2>
-        <h2 class="artist__title artist__title--mobile">newsletter</h2>
+    <section class="newsletter">
+        <h2 class="newsletter__title ">stay up to date</h2>
+        <h2 class="newsletter__title newsletter__title_mobile">newsletter</h2>
 
-        <form class="artist__form">
-            <div class="artist__form-controllers">
-                <input class="email" type="text" placeholder="email address">
-                <button class="btn btn--join">join</button>
+        <form class="newsletter__form">
+            <div class="newsletter__form-controllers">
+                <input class="newsletter__email" type="text" placeholder="email address">
+                <button class="btn btn__join">join</button>
             </div>
-            <div class="artist__terms-link">
+            <div class="newsletter__terms-link">
                 <p>terms</p>
             </div>
         </form>
 
-        <div class="artist__read-more">
-            <p><a href="#">read more</a></p>
+        <div class="newsletter__read-more">
+            <a href="#">read more</a>
         </div>
     </section>
 
-    <footer class="artist__footer">
-        <h3 class="artist__footer-title">follow poetik</h3>
+    <footer class="footer">
+        <h3 class="footer-__title">follow poetik</h3>
         
-        <ul class="artist__social-icons artist__social-icons--footer">
+        <ul class="social-icons social-icons_footer">
             <li><a href="#">facebook</a></li>
             <li><a href="#">twitter</a></li>
             <li><a href="#">instagram</a></li>
             <li><a href="#">soundcloud</a></li>
         </ul>
 
-        <div class="scroll-top">
-            <i></i>
+        <div class="scrolltop-arrow">
+            <i class="scrolltop-arrow__icon"></i>
         </div>
 
-        <div class="artist__author">
+        <div class="footer__author">
             <p>&copy; 2021 devduo</p>
         </div>
-        <div class="artist__footer-links-wrapper">
-            <ul class="artist__footer-links artist__footer-links--left">
+        <div class="footer__links-wrapper">
+            <ul class="footer__links footer__links_left">
                 <li><a href="#">privacy policy</a></li>
                 <li><a href="#">cookies settings</a></li>
             </ul>
 
-            <ul class="artist__footer-links artist__footer-links--right">
+            <ul class="footer__links footer__links_right">
                 <li><a href="#">terms of use</a></li>
                 <li><a href="#">ad choice</a></li>
                 <li><a href="#">cookies policy</a></li>

@@ -17,6 +17,7 @@
     "sass-loader": "^8.0.2"
   },
   "dependencies": {
-    "@splidejs/splide": "^2.4.21"
+    "@splidejs/splide": "^2.4.21",
+    "@splidejs/splide-extension-video": "^0.4.6"
   }
 }
