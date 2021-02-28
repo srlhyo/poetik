@@ -10124,11 +10124,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _splidejs_splide__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_splidejs_splide__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _splidejs_splide_extension_video__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @splidejs/splide-extension-video */ "./node_modules/@splidejs/splide-extension-video/dist/js/splide-extension-video.esm.js");
 /* harmony import */ var _splidejs_splide_extension_video__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_splidejs_splide_extension_video__WEBPACK_IMPORTED_MODULE_1__);
+function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 
 
 new (_splidejs_splide__WEBPACK_IMPORTED_MODULE_0___default())('#image-slider', {
   'cover': true,
-  'heightRatio': 0.5,
+  'heightRatio': 0.7,
   type: 'loop',
   rewind: true,
   autoplay: true,
@@ -10145,6 +10151,133 @@ new (_splidejs_splide__WEBPACK_IMPORTED_MODULE_0___default())('#videosplide', {
   Video: (_splidejs_splide_extension_video__WEBPACK_IMPORTED_MODULE_1___default())
 });
 console.log("this is coming from mix");
+console.log("this is coming from mix"); //READ MORE LINK
+
+var readMore = document.querySelector(".link_about");
+var moreDates = document.querySelector(".link_tour");
+var modal = document.querySelector(".modal_about");
+var tourModal = document.querySelector(".modal_tour");
+var body = document.querySelectorAll("section");
+var footer = document.querySelector("footer");
+var x = document.querySelector(".modal__close-btn");
+var tourX = document.querySelector(".modal__tour-close-btn");
+var heading = document.querySelector(".title_about");
+var header = document.querySelector("header");
+var tourHeading = document.querySelector(".tour h2");
+readMore.addEventListener("click", function () {
+  var _iterator = _createForOfIteratorHelper(body),
+      _step;
+
+  try {
+    for (_iterator.s(); !(_step = _iterator.n()).done;) {
+      var section = _step.value;
+
+      if (section.className !== "modal modal_about") {
+        section.style.display = "none";
+      }
+    }
+  } catch (err) {
+    _iterator.e(err);
+  } finally {
+    _iterator.f();
+  }
+
+  header.style.display = "none";
+  footer.style.display = "none";
+  modal.style.visibility = "visible";
+  modal.scrollIntoView();
+});
+x.addEventListener("click", function () {
+  var _iterator2 = _createForOfIteratorHelper(body),
+      _step2;
+
+  try {
+    for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+      var section = _step2.value;
+
+      if (section.className !== "modal modal_about") {
+        section.style.display = "block";
+        tourModal.style.display = "flex";
+      }
+    }
+  } catch (err) {
+    _iterator2.e(err);
+  } finally {
+    _iterator2.f();
+  }
+
+  header.style.display = "block";
+  footer.style.display = "block";
+  modal.style.visibility = "hidden";
+  heading.scrollIntoView();
+});
+moreDates.addEventListener("click", function () {
+  var _iterator3 = _createForOfIteratorHelper(body),
+      _step3;
+
+  try {
+    for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
+      var section = _step3.value;
+
+      if (section.className !== "modal modal_tour") {
+        section.style.display = "none";
+      }
+    }
+  } catch (err) {
+    _iterator3.e(err);
+  } finally {
+    _iterator3.f();
+  }
+
+  header.style.display = "none";
+  footer.style.display = "none";
+  tourModal.style.visibility = "visible";
+  tourModal.scrollIntoView();
+});
+tourX.addEventListener("click", function () {
+  var _iterator4 = _createForOfIteratorHelper(body),
+      _step4;
+
+  try {
+    for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
+      var section = _step4.value;
+
+      if (section.className !== "modal modal_tour") {
+        section.style.display = "block";
+        modal.style.display = "flex";
+      }
+    }
+  } catch (err) {
+    _iterator4.e(err);
+  } finally {
+    _iterator4.f();
+  }
+
+  header.style.display = "block";
+  footer.style.display = "block";
+  tourModal.style.visibility = "hidden";
+  tourHeading.scrollIntoView();
+}); // MODAL ARROWS
+
+var aboutArrow = document.querySelector(".modal__arrow_about");
+var tourArrow = document.querySelector(".modal__arrow_tour");
+var mainArrow = document.querySelector(".main-arrow");
+var pageTop = document.querySelector("body");
+aboutArrow.addEventListener("click", function () {
+  modal.scrollIntoView({
+    behavior: "smooth"
+  });
+});
+tourArrow.addEventListener("click", function () {
+  tourModal.scrollIntoView({
+    behavior: "smooth"
+  });
+});
+mainArrow.addEventListener("click", function () {
+  pageTop.scrollIntoView({
+    behavior: "smooth"
+  });
+});
 
 /***/ }),
 
