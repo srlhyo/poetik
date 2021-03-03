@@ -13,7 +13,7 @@
     <header class="header">
         <div class="header__top">
             <div class="header__logo-wrapper">
-            <img class="header__logo" src="<?php echo get_stylesheet_directory_uri(); ?>./src/images/POETIK.png" alt="logo">
+            <img class="header__logo" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/POETIK.png" alt="logo">
             </div>
 
             <ul class="social-icons">
@@ -74,7 +74,7 @@
             <p>Poetik is still working, spreading the true essence of the hiphop culture, where he's been used as a reference and influence for many aspiring and made artists.</p>
         </div>
 
-        <img class="modal__arrow modal__arrow_about" src="<?php echo get_stylesheet_directory_uri(); ?>./src/images/scroll top.png" alt="scroll-up-arrow">
+        <img class="modal__arrow modal__arrow_about" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/scroll top.png" alt="scroll-up-arrow">
     </section>
 
     <section class="videos">
@@ -347,7 +347,7 @@
             </div>
         </div>
 
-        <img class="modal__arrow modal__arrow_tour" src="<?php echo get_stylesheet_directory_uri(); ?>./src/images/scroll top.png" alt="scroll-up-arrow">
+        <img class="modal__arrow modal__arrow_tour" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/scroll top.png" alt="scroll-up-arrow">
 </section>
 
     <section class="photos">
@@ -389,21 +389,21 @@
             </div>
 
             <div class="photos__grid">
-                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>./src/images/live.jpeg')">
+                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/live.jpeg')">
                 </div>
-                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>./src/images/staring.jpeg')">
+                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/staring.jpeg')">
                 </div>
-                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>./src/images/flying.jpeg')">
+                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/flying.jpeg')">
                 </div>
-                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>./src/images/smiling.jpeg')">
+                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/smiling.jpeg')">
                 </div>
-                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>./src/images/serious.jpeg')">
+                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/serious.jpeg')">
                 </div>
-                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>./src/images/bridge.jpeg')">
+                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/bridge.jpeg')">
                 </div>
-                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>./src/images/live.jpeg')">
+                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/live.jpeg')">
                 </div>
-                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>./src/images/staring.jpeg')">
+                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/staring.jpeg')">
                 </div>
             </div>
         </div>
@@ -479,7 +479,7 @@
             </div>
             <div class="shop__grid">
                 <div class="photo photo_shop">
-                    <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>./src/images/t-main.jpg')">
+                    <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-main.jpg')">
                         <div class="overlay">
                             <p>sold out</p>
                         </div>
@@ -492,7 +492,7 @@
                     <button class="btn btn__buy">buy</button>
                 </div>
                 <div class="photo photo_shop">
-                    <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>./src/images/t3.jpg')">
+                    <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/t3.jpg')">
                         <div class="overlay">
                             <p>sold out</p>
                         </div>
@@ -505,7 +505,7 @@
                     <button class="btn btn__buy">buy</button>
                 </div>
                 <div class="photo photo_shop">
-                    <div class="photo"style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>./src/images/cd3.jpg')">
+                    <div class="photo"style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/cd3.jpg')">
                         <div class="overlay">
                             <p>sold out</p>
                         </div>
@@ -518,7 +518,7 @@
                     <button class="btn btn__buy">buy</button>
                 </div>
                 <div class="photo photo_shop">
-                    <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>./src/images/cap1.jpg')">
+                    <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/cap1.jpg')">
                         <div class="overlay">
                             <p>sold out</p>
                         </div>
@@ -531,7 +531,7 @@
                     <button class="btn btn__buy">buy</button>
                 </div>
                 <div class="photo photo_shop">
-                    <div class="photo"style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>./src/images/t1.png')">
+                    <div class="photo"style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/t1.png')">
                         <div class="overlay">
                             <p>sold out</p>
                         </div>
@@ -544,7 +544,7 @@
                     <button class="btn btn__buy">buy</button>
                 </div>
                 <div class="photo photo_shop">
-                    <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>./src/images/cd2.jpg')">
+                    <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/cd2.jpg')">
                         <div class="overlay">
                             <p>sold out</p>
                         </div>
@@ -557,7 +557,7 @@
                     <button class="btn btn__buy">buy</button>
                 </div>
                 <div class="photo photo_shop">
-                    <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>./src/images/t2.jpg')">
+                    <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/t2.jpg')">
                         <div class="overlay">
                             <p>sold out</p>
                         </div>
@@ -570,7 +570,7 @@
                     <button class="btn btn__buy">buy</button>
                 </div>
                 <div class="photo photo_shop">
-                    <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>./src/images/cd1.jpg')">
+                    <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/cd1.jpg')">
                         <div class="overlay">
                             <p>sold out</p>
                         </div>
@@ -633,7 +633,7 @@
                     <li><a href="#">cookies policy</a></li>
                 </ul>
 
-                <img class="main-arrow" src="<?php echo get_stylesheet_directory_uri(); ?>./src/images/main-arrow.png" alt="scroll-up-arrow">
+                <img class="main-arrow" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/main-arrow.png" alt="scroll-up-arrow">
             </div> 
         </div>
     </footer>
