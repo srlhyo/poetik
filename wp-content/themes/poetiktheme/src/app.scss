@@ -74,9 +74,15 @@ h3 {
 
 // section padding 
 // .container {margin-inline: auto; width: min(90%, 70.5rem);
-    .wrapper {
-        padding: 0 25px;
-    }
+.wrapper {
+    padding: 0 25px;
+}
+
+.splide__slide img {
+    width : 100%;
+    height: auto;
+}
+
 //HEADER
 .header {
     height: 100vh;
@@ -408,6 +414,10 @@ h3 {
     
 // }
 
+#photos-slider {
+    display: none;
+}
+
 .photos__grid, .shop__grid {
     display:flex;
     flex-wrap: wrap;
@@ -436,12 +446,46 @@ h3 {
     .photos__grid {
         display: none;
     }
+
+    #photos-slider {
+        display: block;
+    }
 }
 
 //SHOP
 
 .shop__grid {
     display: none;
+}
+
+.shop__small-screen {
+    display: block;
+}
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: rgb(255, 255, 255, 0.5);
+    p {
+        color: #21343A;
+        font-weight: 700;
+        font-size: 40px;
+    }
+}
+
+.shop__item-price {
+    p {
+        text-transform: uppercase;
+        font-size: $main-font-size;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+.btn__buy {
+    border: 2px solid #F5D39C;
 }
 
 @media only screen and (min-width: 1024px) {

@@ -3,21 +3,60 @@ import Video from '@splidejs/splide-extension-video';
 
 new Splide( '#image-slider',  {
     'cover'      : true,
-    'heightRatio': 0.7,
+    'heightRatio': 0.58,
     type: 'loop',
     rewind: true,
-    autoplay: true,
+    autoplay: false,
     easing: 'ease',
+    breakpoints: {
+        766: {
+            'heightRatio': .8
+        },
+
+        500: {
+            'heightRatio': 1.2
+        },
+
+        400: {
+            'heightRatio': 1.5
+        }
+    }
 }).mount();
 
 new Splide( '#videosplide', {
     'cover'      : true,
     'heightRatio': 0.5,
-	// video: {
-	// 	autoplay: true,
-	// 	mute    : true,
-	// },
+    perPage: 3,
+    gap: 6,
+    breakpoints: {
+        1000: {
+            perPage: 1
+        }
+    }
 } ).mount( { Video } );
+
+
+new Splide( '#music-slider',  {
+    'cover'      : true,
+    'heightRatio': 0.5,
+    perPage: 3,
+    gap: 6,
+    breakpoints: {
+        1000: {
+            perPage: 1
+        }
+    }
+}).mount();
+
+new Splide( '#photos-slider',  {
+    'cover'      : true,
+    'heightRatio': 0.5,
+}).mount();
+
+new Splide( '#shop-slider',  {
+    'cover'      : true,
+    'heightRatio': 0.5,
+}).mount();
 
 console.log("this is coming from mix");
 

@@ -87,13 +87,13 @@
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=wYWz93lP2L8">
-                        <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/barulho.jpg">' ?>
+                        <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/video1.PNG">' ?>
                     </li>
                     <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=VVu2f4BY5uU">
-                        <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/bridge.jpeg">' ?>
+                        <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/video2.PNG">' ?>
                     </li>
-                    <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=WQ0v5AEAOhA">
-                        <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/elite2.jpg">' ?>
+                    <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=VanlYtToshA">
+                        <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/video3.PNG">' ?>
                     </li>
                 </ul>
             </div>
@@ -105,8 +105,25 @@
 
         <div class="music__slider">
         </div>
+
+        <div id="music-slider" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/barulho.jpg">' ?>
+                    </li>
+                    <li class="splide__slide">
+                        <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/elite3.jpg">' ?>
+                    </li>
+                    <li class="splide__slide">
+                        <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/elite2.jpg">' ?>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <div class="btn-wrapper">
-            <button class="btn btn_listen">listen</button>
+            <button class="btn btn_listen"><a href="https://linktr.ee/Rhymepoetik" target="_blank" style="text-decoration:none;color:inherit">listen</a></button>
             <button class="btn btn_download">download</button>
         </div>
     </section>
@@ -340,6 +357,37 @@
             <div class="photos__slider">
             </div>
 
+            <div id="photos-slider" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/live.jpeg">' ?>
+                        </li>
+                        <li class="splide__slide">
+                            <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/smiling.jpeg">' ?>
+                        </li>
+                        <li class="splide__slide">
+                            <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/live.jpeg">' ?>
+                        </li>
+                        <li class="splide__slide">
+                            <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/staring.jpeg">' ?>
+                        </li>
+                        <li class="splide__slide">
+                            <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/flying.jpeg">' ?>
+                        </li>
+                        <li class="splide__slide">
+                            <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/smiling.jpeg">' ?>
+                        </li>
+                        <li class="splide__slide">
+                            <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/bridge.jpeg">' ?>
+                        </li>
+                        <li class="splide__slide">
+                            <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/live.jpeg">' ?>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
             <div class="photos__grid">
                 <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>./src/images/live.jpeg')">
                 </div>
@@ -367,6 +415,62 @@
             <div class="shop__small-screen">
                 <div class="shop__slider">
                 </div>
+
+                <div id="shop-slider" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/t-main.jpg">' ?>
+                                <div class="overlay">
+                                    <p>sold out</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/t3.jpg">' ?>
+                                <div class="overlay">
+                                    <p>sold out</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/cd3.jpg">' ?>
+                                <div class="overlay">
+                                    <p>sold out</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/cap1.jpg">' ?>
+                                <div class="overlay">
+                                    <p>sold out</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/t1.png">' ?>
+                                <div class="overlay">
+                                    <p>sold out</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/cd2.jpg">' ?>
+                                <div class="overlay">
+                                    <p>sold out</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/t2.jpg">' ?>
+                                <div class="overlay">
+                                    <p>sold out</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/cd1.jpg">' ?>
+                                <div class="overlay">
+                                    <p>sold out</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="shop__item-price">
                     <p>price: 21.89</p>
                 </div>
