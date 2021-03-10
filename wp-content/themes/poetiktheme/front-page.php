@@ -65,7 +65,7 @@
                 <p>In 2011, Poetik decide to lunched his first solo project titled "Contra ventos & tempestades", followed by the second mixtape "Versos de Elite, in 2012. In the beginning of 2014, "Versos de Elite 2" is lunched and in the end of November of 2017 Poetik lunches the squel "Versos de elite 3".</p>
                 <p>Poetik is still working, spreading the true essence of the hiphop culture, where he's been used as a reference and influence for many aspiring and made artists.</p>
             </div>
-            <img class="modal__arrow modal__arrow_about" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/scroll top.png" alt="scroll-up-arrow">
+            <img class="modal__arrow modal__arrow_about" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/scroll-top.png" alt="scroll-up-arrow">
         </div>
     </section>
 

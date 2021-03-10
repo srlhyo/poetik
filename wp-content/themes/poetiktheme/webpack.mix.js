@@ -1,8 +1,6 @@
 // webpack.mix.js
 
 let mix = require('laravel-mix');
-require('laravel-mix-imagemin');
-const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 mix
 .options({
