@@ -1,5 +1,4 @@
-// import Splide from '@splidejs/splide';
-
+/** a function that detects horizontal scroll  **/
 
 // (function (d) {
 //     var w = d.documentElement.offsetWidth,
@@ -14,30 +13,6 @@
 //     };
 // }(document));
 
-
-// new Splide( '#music-slider',  {
-//     'cover'      : true,
-//     'heightRatio': 0.5,
-//     perPage: 3,
-//     gap: 6,
-//     breakpoints: {
-//         1000: {
-//             perPage: 1
-//         }
-//     }
-// }).mount();
-
-// new Splide( '#photos-slider',  {
-//     'cover'      : true,
-//     'heightRatio': 0.5,
-// }).mount();
-
-// new Splide( '#shop-slider',  {
-//     'cover'      : true,
-//     'heightRatio': 0.5,
-// }).mount();
-
-console.log("this is coming from mix");
 
 //READ MORE LINK
 
