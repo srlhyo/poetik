@@ -11,47 +11,42 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__top">
-            <div class="header__logo-wrapper">
-            <img class="header__logo" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/POETIK.png" alt="logo">
-            </div>
-
-            <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook-f social-icons__icon"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter social-icons__icon"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram social-icons__icon"></i></a></li>
-                <li><a href="#"><i class="fab fa-soundcloud social-icons__icon"></i></a></li>
-            </ul>
-        </div>
-
-        <div id="image-slider" class="splide header__slider">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide">
-                        <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/bridge.jpeg">' ?>
-                    </li>
-                    <li class="splide__slide">
-                        <?php echo '<img src="' . get_template_directory_uri() . '/src/images/tag-team.jpg">' ?>
-                    </li>
-                    <li class="splide__slide">
-                        <?php echo '<img src="' . get_template_directory_uri() . '/src/images/new.jpg">' ?>
-                    </li>
+        <div class="container">
+            <div class="header__top">
+                <div class="header__logo-wrapper">
+                    <img class="header__logo" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/POETIK.png" alt="logo">
+                </div>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/Rhymepoetik/" target="_blank"><i class="fab fa-facebook-f social-icons__icon"></i></a></li>
+                    <li><a href="https://twitter.com/Rhymepoetik?s=09" target="_blank"><i class="fab fa-twitter social-icons__icon"></i></a></li>
+                    <li><a href="https://www.instagram.com/rhyme_poetik/?hl=en" target="_blank"><i class="fab fa-instagram social-icons__icon"></i></a></li>
+                    <li><a href="https://soundcloud.com/rhymepoetik" target="_blank"><i class="fab fa-soundcloud social-icons__icon"></i></a></li>
                 </ul>
             </div>
-        </div>
-
-        <div class="scrolldown-arrow">
-            <i class="fas fa-chevron-down"></i>
-        </div>
+            <div class="hero spacing" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/flying.jpeg'),
+                                    radial-gradient(#f90, #fcb900);">
+                <h2 class="title">Interview for The Spotlight with Quatro ENT</h2>
+                <p>Get your popocorns, sit back and enjoy it!</p>
+                <button id="trailer" class="btn btn_trailer">watch the interview</button>
+            </div>
+            <div class="popup">
+                <iframe id="popupVideo" class="popup__video" width="560" height="315" src="https://www.youtube.com/embed/Va5uWtsU6J8"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <span class="popup__close-btn">X</span>
+            </div>
+        </div> 
     </header>
 
     <section class="about">
-    <div class="wrapper">
-        <h2 class="title title_about">know poetik</h2>
-        <span class="about__span"></span>
+        <div class="container">
+            <img class="about__image" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/bridge-dark.png" alt="">
+            <h2 class="title title_about">know poetik</h2>
+            <span class="about__span"></span>
             <div class="about__desktop">
                 <p>Poetik started his music career back in 2005, with a group called Freestyle Family - a union of various elements fom different groups in the UK. They all had the same objectives: expand the Portuguese HipHop culture in the UK. Along with the 3FS (Freestyle Family) Poetik lunch 5 mixtapes: Senoro total; The F-files; Taking Over vol 1, Taking Over vol 2 and Family Bizness. </p>
-                <p>In 2011, Poetik decide to lunch his first solo project titled "Contra ventos & tempestades", followed by the second mixtape "Versos de Elite, in 2012. In the beginning of 2014, "Versos de Elite 2" is lunched and in the end of November of 2017 Poetik lunches the squel "Versos de elite 3".</p>
+                <p>In 2011, Poetik decide to lunched his first solo project titled "Contra ventos & tempestades", followed by the second mixtape "Versos de Elite, in 2012. In the beginning of 2014, "Versos de Elite 2" is lunched and in the end of November of 2017 Poetik lunches the squel "Versos de elite 3".</p>
                 <p>Poetik is still working, spreading the true essence of the hiphop culture, where he's been used as a reference and influence for many aspiring and made artists.</p>
             </div>
             <div class="about__small-screen">
@@ -62,535 +57,378 @@
     </section>
 
     <section class="modal modal_about">
-        <div class="modal__close-btn">x</div>
-
-        <h2 class="modal__title">know poetik</h2>
-
-        <div class="modal__text">
-            <p>Poetik started his music career back in 2005, with a group called Freestyle Family - a union of various elements fom different groups in the UK. They all had the same objectives: expand the Portuguese HipHop culture in the UK. Along with the 3FS (Freestyle Family) Poetik lunch 5 mixtapes: Senoro total; The F-files; Taking Over vol 1, Taking Over vol 2 and Family Bizness. </p>
-
-            <p>In 2011, Poetik decide to lunch his first solo project titled "Contra ventos & tempestades", followed by the second mixtape "Versos de Elite, in 2012. In the beginning of 2014, "Versos de Elite 2" is lunched and in the end of November of 2017 Poetik lunches the squel "Versos de elite 3".</p>
-
-            <p>Poetik is still working, spreading the true essence of the hiphop culture, where he's been used as a reference and influence for many aspiring and made artists.</p>
+        <div class="container">
+            <div class="modal__close-btn">x</div>
+            <h2 class="modal__title">know poetik</h2>
+            <div class="modal__text">
+                <p>Poetik started his music career back in 2005, with a group called Freestyle Family - a union of various elements fom different groups in the UK. They all had the same objectives: expand the Portuguese HipHop culture in the UK. Along with the 3FS (Freestyle Family) Poetik lunch 5 mixtapes: Senoro total; The F-files; Taking Over vol 1, Taking Over vol 2 and Family Bizness. </p>
+                <p>In 2011, Poetik decide to lunched his first solo project titled "Contra ventos & tempestades", followed by the second mixtape "Versos de Elite, in 2012. In the beginning of 2014, "Versos de Elite 2" is lunched and in the end of November of 2017 Poetik lunches the squel "Versos de elite 3".</p>
+                <p>Poetik is still working, spreading the true essence of the hiphop culture, where he's been used as a reference and influence for many aspiring and made artists.</p>
+            </div>
+            <img class="modal__arrow modal__arrow_about" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/scroll top.png" alt="scroll-up-arrow">
         </div>
-
-        <img class="modal__arrow modal__arrow_about" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/scroll top.png" alt="scroll-up-arrow">
     </section>
 
     <section class="videos">
-        <h2 class="title">videos</h2>
-
-        <div class="videos__slider">
-        </div>
-
-        <div id="videosplide" class="splide">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=wYWz93lP2L8">
-                        <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/video1.PNG">' ?>
-                    </li>
-                    <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=VVu2f4BY5uU">
-                        <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/video2.PNG">' ?>
-                    </li>
-                    <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=VanlYtToshA">
-                        <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/video3.PNG">' ?>
-                    </li>
-                </ul>
+        <div class="container">
+            <h2 class="title">videos</h2>
+            <div class="videos__grid">
+                <div class="videos__row">
+                    <div class="videos__item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VanlYtToshA"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="videos__row">
+                    <div class="videos__item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VanlYtToshA"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            
             </div>
         </div>
     </section>
 
     <section class="music">
-        <h2 class="title">music</h2>
-
-        <div class="music__slider">
-        </div>
-
-        <div id="music-slider" class="splide">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide">
-                        <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/barulho.jpg">' ?>
-                    </li>
-                    <li class="splide__slide">
-                        <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/elite3.jpg">' ?>
-                    </li>
-                    <li class="splide__slide">
-                        <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/elite2.jpg">' ?>
-                    </li>
-                </ul>
+        <div class="container">
+            <h2 class="title">music</h2>
+            <div class="music__grid">
+                <div class="music__row">
+                    <img class="about__image" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/elite2.jpg" alt="">
+                    <div class="videos__item">
+                        <iframe src="https://open.spotify.com/embed/album/1QmxwzyFD3k6fw9W5arfnY" width="300" height="380"
+                        frameborder="0"
+                        allowtransparency="true"
+                        allow="encrypted-media">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="music__row">
+                    <img class="about__image" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/elite3.jpg" alt="">
+                    <div class="videos__item">
+                        <iframe src="https://open.spotify.com/embed/album/6MYNMcgg4l52iZJWFVj2k1" width="300" height="380"
+                        frameborder="0"
+                        allowtransparency="true"
+                        allow="encrypted-media">
+                        </iframe>
+                    </div>
+                </div>
+            
+            
             </div>
-        </div>
-
-        <div class="btn-wrapper">
-            <button class="btn btn_listen"><a href="https://linktr.ee/Rhymepoetik" target="_blank" style="text-decoration:none;color:inherit">listen</a></button>
-            <button class="btn btn_download">download</button>
+            <div class="btn-wrapper">
+                <button class="btn btn_listen"><a href="https://linktr.ee/Rhymepoetik" target="_blank" style="text-decoration:none;color:inherit">go to the linktree</a></button>
+                <!-- <button class="btn btn_download">download</button> -->
+            </div>
         </div>
     </section>
 
     <section class="tour">
-    <div class="wrapper">
-        <h2 class="title">tour</h2>
-
-        <div class="tour__cards tour__cards_mobile">
-            <div class="card">
-                <p class="tour__date">jun 2</p>
-                <h3 class="tour__city">cardiff, cf, uk</h3>
-                <p class="tour__venue">principality arena</p>
-                <p class="tour__info">rescheduled date**</p>
-                <a href="#" class="tour__tickets">tickets</a>
+        <div class="container">
+            <h2 class="title">tour</h2>
+            <div class="tour__cards tour__cards_mobile">
+                <div class="card">
+                    <p class="tour__date">jun 2</p>
+                    <h3 class="tour__city">cardiff, cf, uk</h3>
+                    <p class="tour__venue">principality arena</p>
+                    <p class="tour__info">rescheduled date**</p>
+                    <a href="#" class="tour__tickets">tickets</a>
+                </div>
+                <div class="card">
+                    <p class="tour__date">jun 2</p>
+                    <h3 class="tour__city">cardiff, cf, uk</h3>
+                    <p class="tour__venue">principality arena</p>
+                    <p class="tour__info">rescheduled date**</p>
+                    <a href="#" class="tour__tickets">tickets</a>
+                </div>
+                <div class="card">
+                    <p class="tour__date">jun 2</p>
+                    <h3 class="tour__city">cardiff, cf, uk</h3>
+                    <p class="tour__venue">principality arena</p>
+                    <p class="tour__info">rescheduled date**</p>
+                    <a href="#" class="tour__tickets">tickets</a>
+                </div>
             </div>
-            <div class="card">
-                <p class="tour__date">jun 2</p>
-                <h3 class="tour__city">cardiff, cf, uk</h3>
-                <p class="tour__venue">principality arena</p>
-                <p class="tour__info">rescheduled date**</p>
-                <a href="#" class="tour__tickets">tickets</a>
+            <div class="tour__cards tour__cards_tablet">
+                <div class="card">
+                    <p class="tour__date">jun 2</p>
+                    <h3 class="tour__city">cardiff, cf, uk</h3>
+                    <p class="tour__venue">principality arena</p>
+                    <p class="tour__info">rescheduled date**</p>
+                    <a href="#" class="tour__tickets">tickets</a>
+                </div>
+                <div class="card">
+                    <p class="tour__date">jun 2</p>
+                    <h3 class="tour__city">cardiff, cf, uk</h3>
+                    <p class="tour__venue">principality arena</p>
+                    <p class="tour__info">rescheduled date**</p>
+                    <a href="#" class="tour__tickets">tickets</a>
+                </div>
+                <div class="card">
+                    <p class="tour__date">jun 2</p>
+                    <h3 class="tour__city">cardiff, cf, uk</h3>
+                    <p class="tour__venue">principality arena</p>
+                    <p class="tour__info">rescheduled date**</p>
+                    <a href="#" class="tour__tickets">tickets</a>
+                </div>
+                <div class="card">
+                    <p class="tour__date">jun 2</p>
+                    <h3 class="tour__city">cardiff, cf, uk</h3>
+                    <p class="tour__venue">principality arena</p>
+                    <p class="tour__info">rescheduled date**</p>
+                    <a href="#" class="tour__tickets">tickets</a>
+                </div>
+                <div class="card">
+                    <p class="tour__date">jun 2</p>
+                    <h3 class="tour__city">cardiff, cf, uk</h3>
+                    <p class="tour__venue">principality arena</p>
+                    <p class="tour__info">rescheduled date**</p>
+                    <a href="#" class="tour__tickets">tickets</a>
+                </div>
+                <div class="card">
+                    <p class="tour__date">jun 2</p>
+                    <h3 class="tour__city">cardiff, cf, uk</h3>
+                    <p class="tour__venue">principality arena</p>
+                    <p class="tour__info">rescheduled date**</p>
+                    <a href="#" class="tour__tickets">tickets</a>
+                </div>
             </div>
-            <div class="card">
-                <p class="tour__date">jun 2</p>
-                <h3 class="tour__city">cardiff, cf, uk</h3>
-                <p class="tour__venue">principality arena</p>
-                <p class="tour__info">rescheduled date**</p>
-                <a href="#" class="tour__tickets">tickets</a>
+            <div class="tour__cards tour__cards_desktop">
+                <div class="card">
+                    <p class="tour__date">jun 2</p>
+                    <h3 class="tour__city">cardiff, cf, uk</h3>
+                    <p class="tour__venue">principality arena</p>
+                    <p class="tour__info">rescheduled date**</p>
+                    <a href="#" class="tour__tickets">tickets</a>
+                </div>
+                <div class="card">
+                    <p class="tour__date">jun 2</p>
+                    <h3 class="tour__city">cardiff, cf, uk</h3>
+                    <p class="tour__venue">principality arena</p>
+                    <p class="tour__info">rescheduled date**</p>
+                    <a href="#" class="tour__tickets">tickets</a>
+                </div>
+                <div class="card">
+                    <p class="tour__date">jun 2</p>
+                    <h3 class="tour__city">cardiff, cf, uk</h3>
+                    <p class="tour__venue">principality arena</p>
+                    <p class="tour__info">rescheduled date**</p>
+                    <a href="#" class="tour__tickets">tickets</a>
+                </div>
+                <div class="card">
+                    <p class="tour__date">jun 2</p>
+                    <h3 class="tour__city">cardiff, cf, uk</h3>
+                    <p class="tour__venue">principality arena</p>
+                    <p class="tour__info">rescheduled date**</p>
+                    <a href="#" class="tour__tickets">tickets</a>
+                </div>
+                <div class="card">
+                    <p class="tour__date">jun 2</p>
+                    <h3 class="tour__city">cardiff, cf, uk</h3>
+                    <p class="tour__venue">principality arena</p>
+                    <p class="tour__info">rescheduled date**</p>
+                    <a href="#" class="tour__tickets">tickets</a>
+                </div>
+                <div class="card">
+                    <p class="tour__date">jun 2</p>
+                    <h3 class="tour__city">cardiff, cf, uk</h3>
+                    <p class="tour__venue">principality arena</p>
+                    <p class="tour__info">rescheduled date**</p>
+                    <a href="#" class="tour__tickets">tickets</a>
+                </div>
+                <div class="card">
+                    <p class="tour__date">jun 2</p>
+                    <h3 class="tour__city">cardiff, cf, uk</h3>
+                    <p class="tour__venue">principality arena</p>
+                    <p class="tour__info">rescheduled date**</p>
+                    <a href="#" class="tour__tickets">tickets</a>
+                </div>
+                <div class="card">
+                    <p class="tour__date">jun 2</p>
+                    <h3 class="tour__city">cardiff, cf, uk</h3>
+                    <p class="tour__venue">principality arena</p>
+                    <p class="tour__info">rescheduled date**</p>
+                    <a href="#" class="tour__tickets">tickets</a>
+                </div>
+                <div class="card">
+                    <p class="tour__date">jun 2</p>
+                    <h3 class="tour__city">cardiff, cf, uk</h3>
+                    <p class="tour__venue">principality arena</p>
+                    <p class="tour__info">rescheduled date**</p>
+                    <a href="#" class="tour__tickets">tickets</a>
+                </div>
             </div>
-        </div>
-
-        <div class="tour__cards tour__cards_tablet">
-        <div class="card">
-                <p class="tour__date">jun 2</p>
-                <h3 class="tour__city">cardiff, cf, uk</h3>
-                <p class="tour__venue">principality arena</p>
-                <p class="tour__info">rescheduled date**</p>
-                <a href="#" class="tour__tickets">tickets</a>
-            </div>
-            <div class="card">
-                <p class="tour__date">jun 2</p>
-                <h3 class="tour__city">cardiff, cf, uk</h3>
-                <p class="tour__venue">principality arena</p>
-                <p class="tour__info">rescheduled date**</p>
-                <a href="#" class="tour__tickets">tickets</a>
-            </div>
-            <div class="card">
-                <p class="tour__date">jun 2</p>
-                <h3 class="tour__city">cardiff, cf, uk</h3>
-                <p class="tour__venue">principality arena</p>
-                <p class="tour__info">rescheduled date**</p>
-                <a href="#" class="tour__tickets">tickets</a>
-            </div>
-            <div class="card">
-                <p class="tour__date">jun 2</p>
-                <h3 class="tour__city">cardiff, cf, uk</h3>
-                <p class="tour__venue">principality arena</p>
-                <p class="tour__info">rescheduled date**</p>
-                <a href="#" class="tour__tickets">tickets</a>
-            </div>
-            <div class="card">
-                <p class="tour__date">jun 2</p>
-                <h3 class="tour__city">cardiff, cf, uk</h3>
-                <p class="tour__venue">principality arena</p>
-                <p class="tour__info">rescheduled date**</p>
-                <a href="#" class="tour__tickets">tickets</a>
-            </div>
-            <div class="card">
-                <p class="tour__date">jun 2</p>
-                <h3 class="tour__city">cardiff, cf, uk</h3>
-                <p class="tour__venue">principality arena</p>
-                <p class="tour__info">rescheduled date**</p>
-                <a href="#" class="tour__tickets">tickets</a>
-            </div>
-        </div>
-
-        <div class="tour__cards tour__cards_desktop">
-            <div class="card">
-                <p class="tour__date">jun 2</p>
-                <h3 class="tour__city">cardiff, cf, uk</h3>
-                <p class="tour__venue">principality arena</p>
-                <p class="tour__info">rescheduled date**</p>
-                <a href="#" class="tour__tickets">tickets</a>
-            </div>
-            <div class="card">
-                <p class="tour__date">jun 2</p>
-                <h3 class="tour__city">cardiff, cf, uk</h3>
-                <p class="tour__venue">principality arena</p>
-                <p class="tour__info">rescheduled date**</p>
-                <a href="#" class="tour__tickets">tickets</a>
-            </div>
-            <div class="card">
-                <p class="tour__date">jun 2</p>
-                <h3 class="tour__city">cardiff, cf, uk</h3>
-                <p class="tour__venue">principality arena</p>
-                <p class="tour__info">rescheduled date**</p>
-                <a href="#" class="tour__tickets">tickets</a>
-            </div>
-            <div class="card">
-                <p class="tour__date">jun 2</p>
-                <h3 class="tour__city">cardiff, cf, uk</h3>
-                <p class="tour__venue">principality arena</p>
-                <p class="tour__info">rescheduled date**</p>
-                <a href="#" class="tour__tickets">tickets</a>
-            </div>
-            <div class="card">
-                <p class="tour__date">jun 2</p>
-                <h3 class="tour__city">cardiff, cf, uk</h3>
-                <p class="tour__venue">principality arena</p>
-                <p class="tour__info">rescheduled date**</p>
-                <a href="#" class="tour__tickets">tickets</a>
-            </div>
-            <div class="card">
-                <p class="tour__date">jun 2</p>
-                <h3 class="tour__city">cardiff, cf, uk</h3>
-                <p class="tour__venue">principality arena</p>
-                <p class="tour__info">rescheduled date**</p>
-                <a href="#" class="tour__tickets">tickets</a>
-            </div>
-            <div class="card">
-                <p class="tour__date">jun 2</p>
-                <h3 class="tour__city">cardiff, cf, uk</h3>
-                <p class="tour__venue">principality arena</p>
-                <p class="tour__info">rescheduled date**</p>
-                <a href="#" class="tour__tickets">tickets</a>
-            </div>
-            <div class="card">
-                <p class="tour__date">jun 2</p>
-                <h3 class="tour__city">cardiff, cf, uk</h3>
-                <p class="tour__venue">principality arena</p>
-                <p class="tour__info">rescheduled date**</p>
-                <a href="#" class="tour__tickets">tickets</a>
-            </div>
-            <div class="card">
-                <p class="tour__date">jun 2</p>
-                <h3 class="tour__city">cardiff, cf, uk</h3>
-                <p class="tour__venue">principality arena</p>
-                <p class="tour__info">rescheduled date**</p>
-                <a href="#" class="tour__tickets">tickets</a>
-            </div>
-        </div>
-        <span class="link link_tour">more dates</span>
+            
+            <span class="link link_tour">more dates</span>
         </div>
     </section>
 
     <section class="modal modal_tour">
-        <div class="modal__close-btn modal__tour-close-btn">
-            <span>x</span>
+        <div class="container">
+            <div class="modal__close-btn modal__tour-close-btn">
+                <span>x</span>
+            </div>
+            <h2 class="modal__title">tour</h2>
+            <div class="modal__cards modal__cards_mobile">
+                <div class="card">
+                    <p class="modal__date">jun 2</p>
+                    <h3 class="modal__city">cardiff, cf, uk</h3>
+                    <p class="modal__venue">principality arena</p>
+                    <p class="modal__info">rescheduled date**</p>
+                    <p class="modal__tickets">tickets</p>
+                </div>
+                <div class="card">
+                    <p class="modal__date">jun 2</p>
+                    <h3 class="modal__city">cardiff, cf, uk</h3>
+                    <p class="modal__venue">principality arena</p>
+                    <p class="modal__info">rescheduled date**</p>
+                    <p class="modal__tickets">tickets</p>
+                </div>
+                <div class="card">
+                    <p class="modal__date">jun 2</p>
+                    <h3 class="modal__city">cardiff, cf, uk</h3>
+                    <p class="modal__venue">principality arena</p>
+                    <p class="modal__info">rescheduled date**</p>
+                    <p class="modal__tickets">tickets</p>
+                </div>
+                <div class="card">
+                    <p class="modal__date">jun 2</p>
+                    <h3 class="modal__city">cardiff, cf, uk</h3>
+                    <p class="modal__venue">principality arena</p>
+                    <p class="modal__info">rescheduled date**</p>
+                    <p class="modal__tickets">tickets</p>
+                </div>
+                <div class="card">
+                    <p class="modal__date">jun 2</p>
+                    <h3 class="modal__city">cardiff, cf, uk</h3>
+                    <p class="modal__venue">principality arena</p>
+                    <p class="modal__info">rescheduled date**</p>
+                    <p class="modal__tickets">tickets</p>
+                </div>
+                <div class="card">
+                    <p class="modal__date">jun 2</p>
+                    <h3 class="modal__city">cardiff, cf, uk</h3>
+                    <p class="modal__venue">principality arena</p>
+                    <p class="modal__info">rescheduled date**</p>
+                    <p class="modal__tickets">tickets</p>
+                </div>
+            </div>
+            <div class="modal__cards modal__cards_tablet">
+                <div class="card">
+                    <p class="modal__date">jun 2</p>
+                    <h3 class="modal__city">cardiff, cf, uk</h3>
+                    <p class="modal__venue">principality arena</p>
+                    <p class="modal__info">rescheduled date**</p>
+                    <p class="modal__tickets">tickets</p>
+                </div>
+                <div class="card">
+                    <p class="modal__date">jun 2</p>
+                    <h3 class="modal__city">cardiff, cf, uk</h3>
+                    <p class="modal__venue">principality arena</p>
+                    <p class="modal__info">rescheduled date**</p>
+                    <p class="modal__tickets">tickets</p>
+                </div>
+                <div class="card">
+                    <p class="modal__date">jun 2</p>
+                    <h3 class="modal__city">cardiff, cf, uk</h3>
+                    <p class="modal__venue">principality arena</p>
+                    <p class="modal__info">rescheduled date**</p>
+                    <p class="modal__tickets">tickets</p>
+                </div>
+            </div>
+            <img class="modal__arrow modal__arrow_tour" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/scroll top.png" alt="scroll-up-arrow">
         </div>
-
-        <h2 class="modal__title">tour</h2>
-
-        <div class="modal__cards modal__cards_mobile">
-            <div class="card">
-                <p class="modal__date">jun 2</p>
-                <h3 class="modal__city">cardiff, cf, uk</h3>
-                <p class="modal__venue">principality arena</p>
-                <p class="modal__info">rescheduled date**</p>
-                <p class="modal__tickets">tickets</p>
-            </div>
-            <div class="card">
-                <p class="modal__date">jun 2</p>
-                <h3 class="modal__city">cardiff, cf, uk</h3>
-                <p class="modal__venue">principality arena</p>
-                <p class="modal__info">rescheduled date**</p>
-                <p class="modal__tickets">tickets</p>
-            </div>
-            <div class="card">
-                <p class="modal__date">jun 2</p>
-                <h3 class="modal__city">cardiff, cf, uk</h3>
-                <p class="modal__venue">principality arena</p>
-                <p class="modal__info">rescheduled date**</p>
-                <p class="modal__tickets">tickets</p>
-            </div>
-
-            <div class="card">
-                <p class="modal__date">jun 2</p>
-                <h3 class="modal__city">cardiff, cf, uk</h3>
-                <p class="modal__venue">principality arena</p>
-                <p class="modal__info">rescheduled date**</p>
-                <p class="modal__tickets">tickets</p>
-            </div>
-            <div class="card">
-                <p class="modal__date">jun 2</p>
-                <h3 class="modal__city">cardiff, cf, uk</h3>
-                <p class="modal__venue">principality arena</p>
-                <p class="modal__info">rescheduled date**</p>
-                <p class="modal__tickets">tickets</p>
-            </div>
-            <div class="card">
-                <p class="modal__date">jun 2</p>
-                <h3 class="modal__city">cardiff, cf, uk</h3>
-                <p class="modal__venue">principality arena</p>
-                <p class="modal__info">rescheduled date**</p>
-                <p class="modal__tickets">tickets</p>
-            </div>
-        </div>
-
-        <div class="modal__cards modal__cards_tablet">
-            <div class="card">
-                <p class="modal__date">jun 2</p>
-                <h3 class="modal__city">cardiff, cf, uk</h3>
-                <p class="modal__venue">principality arena</p>
-                <p class="modal__info">rescheduled date**</p>
-                <p class="modal__tickets">tickets</p>
-            </div>
-            <div class="card">
-                <p class="modal__date">jun 2</p>
-                <h3 class="modal__city">cardiff, cf, uk</h3>
-                <p class="modal__venue">principality arena</p>
-                <p class="modal__info">rescheduled date**</p>
-                <p class="modal__tickets">tickets</p>
-            </div>
-            <div class="card">
-                <p class="modal__date">jun 2</p>
-                <h3 class="modal__city">cardiff, cf, uk</h3>
-                <p class="modal__venue">principality arena</p>
-                <p class="modal__info">rescheduled date**</p>
-                <p class="modal__tickets">tickets</p>
-            </div>
-        </div>
-
-        <img class="modal__arrow modal__arrow_tour" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/scroll top.png" alt="scroll-up-arrow">
-</section>
+    </section>
 
     <section class="photos">
-        <div class="wrapper">
+        <div class="container">
             <h2 class="title">photos</h2>
-
             <div class="photos__slider">
             </div>
-
-            <div id="photos-slider" class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/live.jpeg">' ?>
-                        </li>
-                        <li class="splide__slide">
-                            <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/smiling.jpeg">' ?>
-                        </li>
-                        <li class="splide__slide">
-                            <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/live.jpeg">' ?>
-                        </li>
-                        <li class="splide__slide">
-                            <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/staring.jpeg">' ?>
-                        </li>
-                        <li class="splide__slide">
-                            <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/flying.jpeg">' ?>
-                        </li>
-                        <li class="splide__slide">
-                            <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/smiling.jpeg">' ?>
-                        </li>
-                        <li class="splide__slide">
-                            <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/bridge.jpeg">' ?>
-                        </li>
-                        <li class="splide__slide">
-                            <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/live.jpeg">' ?>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
             <div class="photos__grid">
-                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/live.jpeg')">
-                </div>
                 <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/staring.jpeg')">
                 </div>
+                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/live.jpeg')">
+                </div>
                 <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/flying.jpeg')">
+                </div>
+                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/bridge.jpeg')">
                 </div>
                 <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/smiling.jpeg')">
                 </div>
                 <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/serious.jpeg')">
-                </div>
-                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/bridge.jpeg')">
-                </div>
-                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/live.jpeg')">
-                </div>
-                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/staring.jpeg')">
                 </div>
             </div>
         </div>
     </section>
 
     <section class="shop">
-        <div class="wrapper">
-            <h2 class="title">shop</h2>
-            <div class="shop__small-screen">
-                <div class="shop__slider">
-                </div>
-
-                <div id="shop-slider" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/t-main.jpg">' ?>
-                                <div class="overlay">
-                                    <p>sold out</p>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/t3.jpg">' ?>
-                                <div class="overlay">
-                                    <p>sold out</p>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/cd3.jpg">' ?>
-                                <div class="overlay">
-                                    <p>sold out</p>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/cap1.jpg">' ?>
-                                <div class="overlay">
-                                    <p>sold out</p>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/t1.png">' ?>
-                                <div class="overlay">
-                                    <p>sold out</p>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/cd2.jpg">' ?>
-                                <div class="overlay">
-                                    <p>sold out</p>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/t2.jpg">' ?>
-                                <div class="overlay">
-                                    <p>sold out</p>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <?php echo '<img src="' .  get_template_directory_uri() . '/src/images/cd1.jpg">' ?>
-                                <div class="overlay">
-                                    <p>sold out</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="shop__item-price">
-                    <p>price: 21.89</p>
-                </div>
-
-                <button class="btn btn__buy">buy</button>
-            </div>
+        <div class="container">
+            <h2 class="title">Poetik's shop</h2>
             <div class="shop__grid">
-                <div class="photo photo_shop">
-                    <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-main.jpg')">
-                        <div class="overlay">
-                            <p>sold out</p>
-                        </div>
+                <article class="shop__item spacing">
+                    <div class="shop__item-wrapper">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-1.png" alt="" class="shop__image">
                     </div>
-
-                    <div class="shop__item-price">
-                        <p>price: 21.89</p>
+                    <h3 class="shop__title">a prototype design</h3>
+                    <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
+                        the info shortly.
+                    </p>
+                    <button class="btn">contact me</button>
+                </article>
+                <article class="shop__item spacing">
+                    <div class="shop__item-wrapper">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-2.png" alt="" class="shop__image">
                     </div>
-
-                    <button class="btn btn__buy">buy</button>
-                </div>
-                <div class="photo photo_shop">
-                    <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/t3.jpg')">
-                        <div class="overlay">
-                            <p>sold out</p>
-                        </div>
+                    <h3 class="shop__title">a prototype design</h3>
+                    <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
+                        the info shortly.
+                    </p>
+                    <button class="btn">contact me</button>
+                </article>
+                <article class="shop__item spacing">
+                    <div class="shop__item-wrapper">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-3.png" alt="" class="shop__image">
                     </div>
-
-                    <div class="shop__item-price">
-                        <p>price: 21.89</p>
+                    <h3 class="shop__title">a prototype design</h3>
+                    <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
+                        the info shortly.
+                    </p>
+                    <button class="btn">contact me</button>
+                </article>
+                <article class="shop__item spacing">
+                    <div class="shop__item-wrapper">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-4.png" alt="" class="shop__image">
                     </div>
-
-                    <button class="btn btn__buy">buy</button>
-                </div>
-                <div class="photo photo_shop">
-                    <div class="photo"style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/cd3.jpg')">
-                        <div class="overlay">
-                            <p>sold out</p>
-                        </div>
+                    <h3 class="shop__title">a prototype design</h3>
+                    <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
+                        the info shortly.
+                    </p>
+                    <button class="btn">contact me</button>
+                </article>
+                <article class="shop__item spacing">
+                    <div class="shop__item-wrapper">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-5.png" alt="" class="shop__image">
                     </div>
-
-                    <div class="shop__item-price">
-                        <p>price: 21.89</p>
-                    </div>
-
-                    <button class="btn btn__buy">buy</button>
-                </div>
-                <div class="photo photo_shop">
-                    <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/cap1.jpg')">
-                        <div class="overlay">
-                            <p>sold out</p>
-                        </div>
-                    </div>
-
-                    <div class="shop__item-price">
-                        <p>price: 21.89</p>
-                    </div>
-
-                    <button class="btn btn__buy">buy</button>
-                </div>
-                <div class="photo photo_shop">
-                    <div class="photo"style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/t1.png')">
-                        <div class="overlay">
-                            <p>sold out</p>
-                        </div>
-                    </div>
-
-                    <div class="shop__item-price">
-                        <p>price: 21.89</p>
-                    </div>
-
-                    <button class="btn btn__buy">buy</button>
-                </div>
-                <div class="photo photo_shop">
-                    <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/cd2.jpg')">
-                        <div class="overlay">
-                            <p>sold out</p>
-                        </div>
-                    </div>
-
-                    <div class="shop__item-price">
-                        <p>price: 21.89</p>
-                    </div>
-
-                    <button class="btn btn__buy">buy</button>
-                </div>
-                <div class="photo photo_shop">
-                    <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/t2.jpg')">
-                        <div class="overlay">
-                            <p>sold out</p>
-                        </div>
-                    </div>
-
-                    <div class="shop__item-price">
-                        <p>price: 21.89</p>
-                    </div>
-
-                    <button class="btn btn__buy">buy</button>
-                </div>
-                <div class="photo photo_shop">
-                    <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/cd1.jpg')">
-                        <div class="overlay">
-                            <p>sold out</p>
-                        </div>
-                    </div>
-                        
-                    <div class="shop__item-price">
-                        <p>price: 21.89</p>
-                    </div>
-
-                    <button class="btn btn__buy">buy</button>
-                </div>
+                    <h3 class="shop__title">a prototype design</h3>
+                    <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
+                        the info shortly.
+                    </p>
+                    <button class="btn">contact me</button>
+                </article>
             </div>
         </div>
     </section>
 
     <section class="newsletter">
-        <div class="wrapper_newsletter">
+        <div class="container">
             <h2 class="title newsletter__large-screen-title">stay up to date</h2>
             <h2 class="title newsletter__small-screen-title">newsletter</h2>
-
             <form class="newsletter__form">
                 <div class="newsletter__form-controllers">
                     <input class="newsletter__email" type="text" placeholder="email address">
@@ -604,37 +442,35 @@
     </section>
 
     <footer class="footer">
-        <h3 class="title title_footer">follow poetik</h3>
-
-        <ul class="social-icons social-icons_footer">
-                <li><a href="#"><i class="fab fa-facebook-f social-icons__icon"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter social-icons__icon"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram social-icons__icon"></i></a></li>
-                <li><a href="#"><i class="fab fa-soundcloud social-icons__icon"></i></a></li>
-            </ul>
-
-        <div class="scrolltop-arrow">
-            <i class="scrolltop-arrow__icon"></i>
-        </div>
-        <div class="wrapper">
-            <div class="footer__author">
-                <p>&copy; 2021 devduo</p>
+        <div class="container">
+            <h3 class="title title_footer">follow poetik</h3>
+            <ul class="social-icons social-icons_footer">
+                    <li><a href="https://www.facebook.com/Rhymepoetik/" target="_blank"><i class="fab fa-facebook-f social-icons__icon"></i></a></li>
+                    <li><a href="https://twitter.com/Rhymepoetik?s=09" target="_blank"><i class="fab fa-twitter social-icons__icon"></i></a></li>
+                    <li><a href="https://www.instagram.com/rhyme_poetik/?hl=en" target="_blank"><i class="fab fa-instagram social-icons__icon"></i></a></li>
+                    <li><a href="https://soundcloud.com/rhymepoetik" target="_blank"><i class="fab fa-soundcloud social-icons__icon"></i></a></li>
+                </ul>
+            <div class="scrolltop-arrow">
+                <i class="scrolltop-arrow__icon"></i>
             </div>
-            <div class="footer__links-wrapper">
-                <ul class="footer__links footer__links_left">
-                    <li class="footer__author-link">&copy; 2021 devduo</li>
-                    <li><a href="#">privacy policy</a></li>
-                    <li><a href="#">cookies settings</a></li>
-                </ul>
-
-                <ul class="footer__links footer__links_right">
-                    <li><a href="#">terms of use</a></li>
-                    <li><a href="#">ad choice</a></li>
-                    <li><a href="#">cookies policy</a></li>
-                </ul>
-
-                <img class="main-arrow" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/main-arrow.png" alt="scroll-up-arrow">
-            </div> 
+            <div class="wrapper">
+                <div class="footer__author">
+                    <p>&copy; 2021 devduo</p>
+                </div>
+                <div class="footer__links-wrapper">
+                    <ul class="footer__links footer__links_left">
+                        <li class="footer__author-link">&copy; 2021 devduo</li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">cookies settings</a></li>
+                    </ul>
+                    <ul class="footer__links footer__links_right">
+                        <li><a href="#">terms of use</a></li>
+                        <li><a href="#">ad choice</a></li>
+                        <li><a href="#">cookies policy</a></li>
+                    </ul>
+                    <img class="main-arrow" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/main-arrow.png" alt="scroll-up-arrow">
+                </div>
+            </div>
         </div>
     </footer>
     <?php wp_footer() ?>

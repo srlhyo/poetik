@@ -1,64 +1,41 @@
-import Splide from '@splidejs/splide';
-import Video from '@splidejs/splide-extension-video';
-
-new Splide( '#image-slider',  {
-    'cover'      : true,
-    'heightRatio': 0.58,
-    type: 'loop',
-    rewind: true,
-    autoplay: false,
-    easing: 'ease',
-    breakpoints: {
-        766: {
-            'heightRatio': .8
-        },
-
-        500: {
-            'heightRatio': 1.2
-        },
-
-        400: {
-            'heightRatio': 1.5
-        }
-    }
-}).mount();
-
-new Splide( '#videosplide', {
-    'cover'      : true,
-    'heightRatio': 0.5,
-    perPage: 3,
-    gap: 6,
-    breakpoints: {
-        1000: {
-            perPage: 1
-        }
-    }
-} ).mount( { Video } );
+// import Splide from '@splidejs/splide';
 
 
-new Splide( '#music-slider',  {
-    'cover'      : true,
-    'heightRatio': 0.5,
-    perPage: 3,
-    gap: 6,
-    breakpoints: {
-        1000: {
-            perPage: 1
-        }
-    }
-}).mount();
+// (function (d) {
+//     var w = d.documentElement.offsetWidth,
+//         t = d.createTreeWalker(d.body, NodeFilter.SHOW_ELEMENT),
+//         b;
+//     while (t.nextNode()) {
+//         b = t.currentNode.getBoundingClientRect();
+//         if (b.right > w || b.left < 0) {
+//             t.currentNode.style.setProperty('outline', '1px dotted red', 'important');
+//             console.log(t.currentNode);
+//         }
+//     };
+// }(document));
 
-new Splide( '#photos-slider',  {
-    'cover'      : true,
-    'heightRatio': 0.5,
-}).mount();
 
-new Splide( '#shop-slider',  {
-    'cover'      : true,
-    'heightRatio': 0.5,
-}).mount();
+// new Splide( '#music-slider',  {
+//     'cover'      : true,
+//     'heightRatio': 0.5,
+//     perPage: 3,
+//     gap: 6,
+//     breakpoints: {
+//         1000: {
+//             perPage: 1
+//         }
+//     }
+// }).mount();
 
-console.log("this is coming from mix");
+// new Splide( '#photos-slider',  {
+//     'cover'      : true,
+//     'heightRatio': 0.5,
+// }).mount();
+
+// new Splide( '#shop-slider',  {
+//     'cover'      : true,
+//     'heightRatio': 0.5,
+// }).mount();
 
 console.log("this is coming from mix");
 
@@ -75,6 +52,21 @@ const tourX = document.querySelector(".modal__tour-close-btn");
 const heading = document.querySelector(".title_about");
 const header = document.querySelector("header");
 const tourHeading = document.querySelector(".tour h2");
+
+const popup = document.querySelector(".popup");
+const trailer = document.querySelector("#trailer");
+const closePopup = document.querySelector(".popup__close-btn");
+
+
+trailer.addEventListener("click", function() {
+    popup.classList.toggle("active");
+});
+
+closePopup.addEventListener("click", function() {
+    popup.classList.toggle("active");
+    document.getElementById("popupVideo").src = "";
+    document.getElementById("popupVideo").src = "https://www.youtube.com/embed/Va5uWtsU6J8";
+});
 
 readMore.addEventListener("click", function(){
     for (let section of body){
