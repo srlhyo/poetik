@@ -29,12 +29,13 @@
                 <p>Get your popocorns, sit back and enjoy it!</p>
                 <button id="trailer" class="btn btn_trailer">watch the interview</button>
             </div>
-            <div class="popup">
+            <div class="popup popup_header">
+                <span class="popup__close-btn">X</span>
                 <iframe id="popupVideo" class="popup__video" width="560" height="315" src="https://www.youtube.com/embed/Va5uWtsU6J8"
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
-                <span class="popup__close-btn">X</span>
+                
             </div>
         </div> 
     </header>
@@ -379,7 +380,7 @@
                     <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
                         the info shortly.
                     </p>
-                    <button class="btn">contact me</button>
+                    <button class="btn btn_contact">contact me</button>
                 </article>
                 <article class="shop__item spacing">
                     <div class="shop__item-wrapper">
@@ -389,7 +390,7 @@
                     <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
                         the info shortly.
                     </p>
-                    <button class="btn">contact me</button>
+                    <button class="btn btn_contact">contact me</button>
                 </article>
                 <article class="shop__item spacing">
                     <div class="shop__item-wrapper">
@@ -399,7 +400,7 @@
                     <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
                         the info shortly.
                     </p>
-                    <button class="btn">contact me</button>
+                    <button class="btn btn_contact">contact me</button>
                 </article>
                 <article class="shop__item spacing">
                     <div class="shop__item-wrapper">
@@ -409,7 +410,7 @@
                     <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
                         the info shortly.
                     </p>
-                    <button class="btn">contact me</button>
+                    <button class="btn btn_contact">contact me</button>
                 </article>
                 <article class="shop__item spacing">
                     <div class="shop__item-wrapper">
@@ -419,10 +420,14 @@
                     <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
                         the info shortly.
                     </p>
-                    <button class="btn">contact me</button>
+                    <button class="btn btn_contact">contact me</button>
                 </article>
             </div>
         </div>
+            <div class="popup popup_contact">
+                <?php echo do_shortcode( '[contact-form-7 id="29" title="Contact form 1"]' ); ?>
+                <span class="popup__close-btn popup_contact-closeBtn">X</span>
+            </div>
     </section>
 
     <section class="newsletter">

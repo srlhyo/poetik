@@ -28,10 +28,23 @@ const heading = document.querySelector(".title_about");
 const header = document.querySelector("header");
 const tourHeading = document.querySelector(".tour h2");
 
-const popup = document.querySelector(".popup");
+const popup = document.querySelector(".popup_header");
 const trailer = document.querySelector("#trailer");
 const closePopup = document.querySelector(".popup__close-btn");
 
+const contactPopup = document.querySelector(".popup_contact");
+const shopButtons = document.querySelectorAll(".btn_contact");
+const closeContactPopup = document.querySelector(".popup_contact-closeBtn");
+
+shopButtons.forEach(function(btn) {
+    btn.addEventListener("click", function() {
+        contactPopup.classList.toggle("active");
+    });
+});
+
+closeContactPopup.addEventListener("click", function() {
+    contactPopup.classList.toggle("active");
+});
 
 trailer.addEventListener("click", function() {
     popup.classList.toggle("active");
@@ -39,6 +52,7 @@ trailer.addEventListener("click", function() {
 
 closePopup.addEventListener("click", function() {
     popup.classList.toggle("active");
+
     document.getElementById("popupVideo").src = "";
     document.getElementById("popupVideo").src = "https://www.youtube.com/embed/Va5uWtsU6J8";
 });
