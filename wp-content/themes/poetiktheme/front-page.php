@@ -20,14 +20,14 @@
                     <li><a href="https://www.facebook.com/Rhymepoetik/" target="_blank"><i class="fab fa-facebook-f social-icons__icon"></i></a></li>
                     <li><a href="https://twitter.com/Rhymepoetik?s=09" target="_blank"><i class="fab fa-twitter social-icons__icon"></i></a></li>
                     <li><a href="https://www.instagram.com/rhyme_poetik/?hl=en" target="_blank"><i class="fab fa-instagram social-icons__icon"></i></a></li>
-                    <li><a href="https://soundcloud.com/rhymepoetik" target="_blank"><i class="fab fa-soundcloud social-icons__icon"></i></a></li>
+                    <li><a href="https://open.spotify.com/artist/7axOuj8wyBAsilUWPG3Gfr" target="_blank"><i class="fab fa-spotify social-icons__icon"></i></a></li>
                 </ul>
             </div>
             <div class="hero spacing" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/flying.jpeg'),
                                     radial-gradient(#f90, #fcb900);">
-                <h2 class="title">Interview for The Spotlight with Quatro ENT</h2>
+                <h2 class="title">Interview for The Spotlight</h2>
                 <p>Get your popocorns, sit back and enjoy it!</p>
-                <button id="trailer" class="btn btn_trailer">watch the interview</button>
+                <button id="trailer" class="btn btn_news">watch the interview</button>
             </div>
             <div class="popup popup_header">
                 <span class="popup__close-btn">X</span>
@@ -42,16 +42,15 @@
 
     <section class="about">
         <div class="container">
-            <img class="about__image" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/bridge-dark.png" alt="">
+            <img class="about__image" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/bridge-dark-1.png" alt="">
             <h2 class="title title_about">know poetik</h2>
-            <span class="about__span"></span>
             <div class="about__desktop">
-                <p>Poetik started his music career back in 2005, with a group called Freestyle Family - a union of various elements fom different groups in the UK. They all had the same objectives: expand the Portuguese HipHop culture in the UK. Along with the 3FS (Freestyle Family) Poetik lunch 5 mixtapes: Senoro total; The F-files; Taking Over vol 1, Taking Over vol 2 and Family Bizness. </p>
-                <p>In 2011, Poetik decide to lunched his first solo project titled "Contra ventos & tempestades", followed by the second mixtape "Versos de Elite, in 2012. In the beginning of 2014, "Versos de Elite 2" is lunched and in the end of November of 2017 Poetik lunches the squel "Versos de elite 3".</p>
+                <p>Poetik started his music career back in 2005, with a group called Freestyle Family - a union of various elements fom different groups in the UK. They all had the same objectives: expand the Portuguese HipHop culture in the UK. Along with the 3FS (Freestyle Family) Poetik launched 5 mixtapes: Senoro total; The F-files; Taking Over vol 1, Taking Over vol 2 and Family Bizness. </p>
+                <p>In 2011, Poetik decided to launch his first solo project titled "Contra ventos & tempestades", followed by the second mixtape "Versos de Elite, in 2012. In the beginning of 2014, "Versos de Elite 2" is launched and in the end of November of 2017 Poetik launched the squel "Versos de elite 3".</p>
                 <p>Poetik is still working, spreading the true essence of the hiphop culture, where he's been used as a reference and influence for many aspiring and made artists.</p>
             </div>
             <div class="about__small-screen">
-                <p>Poetik started his music career back in 2005, with a group called Freestyle Family - a union of various elements fom different groups in the UK. They all had the same objectives: expand the Portuguese HipHop culture in the UK. Along with the 3FS (Freestyle Family) Poetik lunch 5 mixtapes: Senoro total; The F-files; Taking Over vol 1, Taking Over vol 2 and Family Bizness. </p>
+                <p>Poetik started his music career back in 2005, with a group called Freestyle Family - a union of various elements fom different groups in the UK. They all had the same objectives: expand the Portuguese HipHop culture in the UK. Along with the 3FS (Freestyle Family) Poetik launched 5 mixtapes: Senoro total; The F-files; Taking Over vol 1, Taking Over vol 2 and Family Bizness. </p>
                 <span class="link link_about">read more</span>
             </div>
         </div>
@@ -62,8 +61,8 @@
             <div class="modal__close-btn">x</div>
             <h2 class="modal__title">know poetik</h2>
             <div class="modal__text">
-                <p>Poetik started his music career back in 2005, with a group called Freestyle Family - a union of various elements fom different groups in the UK. They all had the same objectives: expand the Portuguese HipHop culture in the UK. Along with the 3FS (Freestyle Family) Poetik lunch 5 mixtapes: Senoro total; The F-files; Taking Over vol 1, Taking Over vol 2 and Family Bizness. </p>
-                <p>In 2011, Poetik decide to lunched his first solo project titled "Contra ventos & tempestades", followed by the second mixtape "Versos de Elite, in 2012. In the beginning of 2014, "Versos de Elite 2" is lunched and in the end of November of 2017 Poetik lunches the squel "Versos de elite 3".</p>
+                <p>Poetik started his music career back in 2005, with a group called Freestyle Family - a union of various elements fom different groups in the UK. They all had the same objectives: expand the Portuguese HipHop culture in the UK. Along with the 3FS (Freestyle Family) Poetik launched 5 mixtapes: Senoro total; The F-files; Taking Over vol 1, Taking Over vol 2 and Family Bizness. </p>
+                <p>In 2011, Poetik decide to launched his first solo project titled "Contra ventos & tempestades", followed by the second mixtape "Versos de Elite, in 2012. In the beginning of 2014, "Versos de Elite 2" is launched and in the end of November of 2017 Poetik launched the squel "Versos de elite 3".</p>
                 <p>Poetik is still working, spreading the true essence of the hiphop culture, where he's been used as a reference and influence for many aspiring and made artists.</p>
             </div>
             <img class="modal__arrow modal__arrow_about" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/scroll-top.png" alt="scroll-up-arrow">
@@ -100,19 +99,19 @@
             <h2 class="title">music</h2>
             <div class="music__grid">
                 <div class="music__row">
-                    <img class="about__image" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/elite2.jpg" alt="">
+                    <img class="music__image" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/elite3.jpg" alt="">
                     <div class="videos__item">
-                        <iframe src="https://open.spotify.com/embed/album/1QmxwzyFD3k6fw9W5arfnY" width="300" height="380"
-                        frameborder="0"
-                        allowtransparency="true"
-                        allow="encrypted-media">
+                        <iframe src="https://open.spotify.com/embed/album/6MYNMcgg4l52iZJWFVj2k1" width="300" height="380"
+                            frameborder="0"
+                            allowtransparency="true"
+                            allow="encrypted-media">
                         </iframe>
                     </div>
                 </div>
                 <div class="music__row">
-                    <img class="about__image" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/elite3.jpg" alt="">
+                    <img class="music__image" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/elite2.jpg" alt="">
                     <div class="videos__item">
-                        <iframe src="https://open.spotify.com/embed/album/6MYNMcgg4l52iZJWFVj2k1" width="300" height="380"
+                        <iframe src="https://open.spotify.com/embed/album/1QmxwzyFD3k6fw9W5arfnY" width="300" height="380"
                         frameborder="0"
                         allowtransparency="true"
                         allow="encrypted-media">
@@ -123,6 +122,7 @@
             
             </div>
             <div class="btn-wrapper">
+                <p class="more-content">**do you want to check out more content?**</p>
                 <button class="btn btn_listen"><a href="https://linktr.ee/Rhymepoetik" target="_blank" style="text-decoration:none;color:inherit">go to the linktree</a></button>
                 <!-- <button class="btn btn_download">download</button> -->
             </div>
@@ -342,7 +342,7 @@
                     <p class="modal__tickets">tickets</p>
                 </div>
             </div>
-            <img class="modal__arrow modal__arrow_tour" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/scroll top.png" alt="scroll-up-arrow">
+            <img class="modal__arrow modal__arrow_tour" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/scroll-top.png" alt="scroll-up-arrow">
         </div>
     </section>
 
@@ -370,11 +370,11 @@
 
     <section class="shop">
         <div class="container">
-            <h2 class="title">Poetik's shop</h2>
+            <h2 class="title">poetik's merch</h2>
             <div class="shop__grid">
                 <article class="shop__item spacing">
                     <div class="shop__item-wrapper">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-1.png" alt="" class="shop__image">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-1.jpg" alt="" class="shop__image">
                     </div>
                     <h3 class="shop__title">a prototype design</h3>
                     <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
@@ -384,7 +384,7 @@
                 </article>
                 <article class="shop__item spacing">
                     <div class="shop__item-wrapper">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-2.png" alt="" class="shop__image">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-2.jpg" alt="" class="shop__image">
                     </div>
                     <h3 class="shop__title">a prototype design</h3>
                     <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
@@ -394,7 +394,7 @@
                 </article>
                 <article class="shop__item spacing">
                     <div class="shop__item-wrapper">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-3.png" alt="" class="shop__image">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-3.jpg" alt="" class="shop__image">
                     </div>
                     <h3 class="shop__title">a prototype design</h3>
                     <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
@@ -404,7 +404,7 @@
                 </article>
                 <article class="shop__item spacing">
                     <div class="shop__item-wrapper">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-4.png" alt="" class="shop__image">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-4.jpg" alt="" class="shop__image">
                     </div>
                     <h3 class="shop__title">a prototype design</h3>
                     <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
@@ -414,7 +414,7 @@
                 </article>
                 <article class="shop__item spacing">
                     <div class="shop__item-wrapper">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-5.png" alt="" class="shop__image">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-5.jpg" alt="" class="shop__image">
                     </div>
                     <h3 class="shop__title">a prototype design</h3>
                     <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
@@ -453,7 +453,7 @@
                     <li><a href="https://www.facebook.com/Rhymepoetik/" target="_blank"><i class="fab fa-facebook-f social-icons__icon"></i></a></li>
                     <li><a href="https://twitter.com/Rhymepoetik?s=09" target="_blank"><i class="fab fa-twitter social-icons__icon"></i></a></li>
                     <li><a href="https://www.instagram.com/rhyme_poetik/?hl=en" target="_blank"><i class="fab fa-instagram social-icons__icon"></i></a></li>
-                    <li><a href="https://soundcloud.com/rhymepoetik" target="_blank"><i class="fab fa-soundcloud social-icons__icon"></i></a></li>
+                    <li><a href="https://open.spotify.com/artist/7axOuj8wyBAsilUWPG3Gfr" target="_blank"><i class="fab fa-spotify social-icons__icon"></i></a></li>
                 </ul>
             <div class="scrolltop-arrow">
                 <i class="scrolltop-arrow__icon"></i>
