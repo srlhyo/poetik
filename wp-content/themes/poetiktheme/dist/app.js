@@ -173,7 +173,39 @@ mainArrow.addEventListener("click", function () {
   pageTop.scrollIntoView({
     behavior: "smooth"
   });
+}); //ANIMATIONS
+
+var listenButton = document.querySelector(".btn_listen");
+var contactButtons = document.querySelectorAll(".btn_contact");
+listenButton.addEventListener("mouseout", function () {
+  listenButton.classList.remove("animation");
 });
+listenButton.addEventListener("mouseover", function () {
+  listenButton.classList.add("animation");
+});
+
+var _iterator5 = _createForOfIteratorHelper(contactButtons),
+    _step5;
+
+try {
+  var _loop = function _loop() {
+    var button = _step5.value;
+    button.addEventListener("mouseout", function () {
+      button.classList.remove("animation");
+    });
+    button.addEventListener("mouseover", function () {
+      button.classList.add("animation");
+    });
+  };
+
+  for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
+    _loop();
+  }
+} catch (err) {
+  _iterator5.e(err);
+} finally {
+  _iterator5.f();
+}
 
 /***/ }),
 

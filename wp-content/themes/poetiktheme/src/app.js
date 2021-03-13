@@ -124,3 +124,26 @@ tourArrow.addEventListener("click", function(){
 mainArrow.addEventListener("click", function(){
     pageTop.scrollIntoView({behavior: "smooth"});
 })
+
+//ANIMATIONS
+
+const listenButton = document.querySelector(".btn_listen");
+const contactButtons = document.querySelectorAll(".btn_contact");
+
+listenButton.addEventListener("mouseout", function(){
+    listenButton.classList.remove("animation");
+})
+
+listenButton.addEventListener("mouseover", function(){
+    listenButton.classList.add("animation");
+})
+
+for (let button of contactButtons) {
+    button.addEventListener("mouseout", function(){
+        button.classList.remove("animation");
+    })
+    
+    button.addEventListener("mouseover", function(){
+        button.classList.add("animation");
+    })
+}
