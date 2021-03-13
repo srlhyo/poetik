@@ -473,7 +473,7 @@
                         <li><a href="#">ad choice</a></li>
                         <li><a href="#">cookies policy</a></li>
                     </ul>
-                    <img class="main-arrow" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/main-arrow.png" alt="scroll-up-arrow">
+                    <img class="main-arrow move move_desktop" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/main-arrow.png" alt="scroll-up-arrow">
                 </div>
             </div>
         </div>

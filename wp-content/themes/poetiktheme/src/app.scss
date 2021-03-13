@@ -86,6 +86,7 @@ img {
     letter-spacing: 1px;
     width: 100%;
     max-width: 310px;
+    cursor: pointer;
 }
 
 .spacing > *+* {
@@ -143,7 +144,7 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10000;
-    background: rgb(173 67 67 / 95%);
+    background: rgb(245 211 156 / 95%);
     width: 100%;
     height: 100%;
     display: flex;
@@ -173,6 +174,7 @@ img {
     cursor: pointer;
     max-width: 32px ;
     font-size: 1.5em;
+    color:#4b3a35;
 }
 
 .btn_news {
@@ -705,13 +707,13 @@ img {
 .message {
     width: 100%;
     height: 60px;
-    font-size: $main-font-size;
+    font-size: 14px;
 }
 
 .input {
     width: 100%;
     padding: 5px;
-    font-size: $main-font-size;
+    font-size: 14px;
 }
 
 .wpcf7 {
@@ -735,5 +737,56 @@ img {
     }
 }
 
+//ANIMATIONS
 
+.btn_news {
+    animation-name: changeBg;
+    animation-iteration-count: 10;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
 
+@keyframes changeBg {
+    from {background-color: transparent;}
+    to {background-color: rgb(211, 147, 43);}
+}
+
+.animation {
+    animation-name: changeBorderColor;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changeBorderColor {
+    to { border: 2px solid green}
+}
+
+.move {
+    animation-name: moveUpMobile;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes moveUpMobile {
+    to { margin-top: 10px;}
+}
+
+.move_desktop {
+    animation-name: moveUp;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes moveUp {
+    to { top: -55px;}
+}
+
+@media only screen and (max-width: 767px){
+    .move {
+        animation-name: moveUpMobile;
+    }
+}
