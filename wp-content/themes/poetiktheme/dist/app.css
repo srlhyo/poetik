@@ -523,7 +523,8 @@ img {
   color: white;
   background-color: transparent;
   font-size: 18px;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .btn__join {
