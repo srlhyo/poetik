@@ -193,7 +193,7 @@ img {
     padding: 10em 0;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom left 30%;
+    background-position: top left 30%;
     background-blend-mode: multiply;
     background-attachment: fixed;
 }
@@ -524,6 +524,10 @@ img {
 }
 
 .shop__item-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 420px;
     padding: 2em;
     border: 2px solid #F5D39C;
     border-radius: 20px;
@@ -536,6 +540,13 @@ img {
 
 .newsletter__form {
     text-align: center;
+}
+
+@media only screen and (min-width: 750px) {
+    .newsletter .container{
+        width: max-content;
+        margin: 0 auto;
+    }
 }
 
 .newsletter__email {
@@ -554,11 +565,6 @@ img {
     background: #F5D39C;
     color: black;
     font-weight: bold;
-}
-
-.wrapper_newsletter {
-    width: max-content;
-    margin: 0 auto;
 }
 
 .newsletter__form-controllers {
@@ -616,7 +622,8 @@ img {
 }
 
 .social-icons_footer {
-    width: 100%;
+    width: 60%;
+    margin: 0 auto;
     justify-content: space-evenly;
 }
 
