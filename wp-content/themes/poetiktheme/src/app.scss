@@ -536,6 +536,7 @@ img {
 }
 
 //NEWSLETTER
+
 .newsletter__large-screen-title {
     display: none;
 }
@@ -577,6 +578,21 @@ img {
     justify-content: center;
     align-items: flex-end;
     gap: 1em;
+}
+
+// NEWSLETTER error message
+
+.alert {
+    padding: 10px;
+    
+}
+
+.alert.error {
+    color: #ff4343;
+}
+
+.alert.success {
+    color: #75f575;
 }
 
 @media only screen and (min-width: 748px) {

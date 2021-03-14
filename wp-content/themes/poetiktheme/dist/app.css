@@ -542,6 +542,18 @@ img {
   gap: 1em;
 }
 
+.alert {
+  padding: 10px;
+}
+
+.alert.error {
+  color: #ff4343;
+}
+
+.alert.success {
+  color: #75f575;
+}
+
 @media only screen and (min-width: 748px) {
   .newsletter__large-screen-title {
     display: block;

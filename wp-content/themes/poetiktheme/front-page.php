@@ -425,19 +425,47 @@
             </div>
         </div>
             <div class="popup popup_contact">
-                <?php echo do_shortcode( '[contact-form-7 id="29" title="Contact form 1"]' ); ?>
+                <?php echo do_shortcode( '[contact-form-7 id="4" title="Contact form 1"]' ); ?>
                 <span class="popup__close-btn popup_contact-closeBtn">X</span>
             </div>
     </section>
 
-    <section class="newsletter">
+    <section class="newsletter" id="subscribeNewsletter">
         <div class="container">
             <h2 class="title newsletter__large-screen-title">stay up to date</h2>
             <h2 class="title newsletter__small-screen-title">newsletter</h2>
-            <form class="newsletter__form">
+            <form class="newsletter__form" action="#subscribeNewsletter" method="POST" name="subscribe">
+                <?php
+                    $userEmail = ""; // first the field is empty
+                    if(isset($_POST['subscribe'])) { // if subscribe button is clicked
+                        $userEmail = $_POST['email']; // getting user email
+                        if(filter_var($userEmail, FILTER_VALIDATE_EMAIL)) { // validating user entered email
+                            $subject = "Thanks for subscribing - Poetik";
+                            $message = "Thanks for subscribing to Poetik page. You'll always recieve latest updates. And your information won't be shared or sold.";
+                            $sender = "From: helioschultz_1@msn.com";
+                            if(mail($userEmail, $subject,$message, $sender)) { // php function to send email
+                                ?>
+                                <!-- Show a success message if email is sent -->
+                                <p class="alert success">Thanks for subscribing.</p>
+                                <?php
+                                $userEmail = ""; //field is empty
+                            } else {
+                                ?>
+                                <!-- Show an error message if email can't be sent -->
+                                <p class="alert error">Failed while sending your email!</p>
+                                <?php
+                            }
+                        } else {
+                            ?>
+                                <!-- Show an error message if email is not valid -->
+                                <p class="alert error"><?php echo $userEmail; ?> is not a valid email!</p>
+                            <?php 
+                        }
+                    } 
+                ?>
                 <div class="newsletter__form-controllers">
-                    <input class="newsletter__email" type="text" placeholder="email address">
-                    <button class="btn btn__join">join</button>
+                    <input class="newsletter__email" name="email" type="text" placeholder="email address" required value="<?php echo $userEmail; ?>">
+                    <button class="btn btn__join" name="subscribe">join</button>
                 </div>
                 <div class="link">
                     <p>terms</p>
@@ -462,16 +490,16 @@
                 <div class="footer__author">
                     <p>&copy; 2021 devduo</p>
                 </div>
-                <div class="footer__links-wrapper">
+                <div class="footer__links-wrapper" id="mylinks">
                     <ul class="footer__links footer__links_left">
                         <li class="footer__author-link">&copy; 2021 devduo</li>
-                        <li><a href="#">privacy policy</a></li>
-                        <li><a href="#">cookies settings</a></li>
+                        <li><a href="#mylinks">privacy policy</a></li>
+                        <li><a href="#mylinks">cookies settings</a></li>
                     </ul>
                     <ul class="footer__links footer__links_right">
-                        <li><a href="#">terms of use</a></li>
-                        <li><a href="#">ad choice</a></li>
-                        <li><a href="#">cookies policy</a></li>
+                        <li><a href="#mylinks">terms of use</a></li>
+                        <li><a href="#mylinks">ad choice</a></li>
+                        <li><a href="#mylinks">cookies policy</a></li>
                     </ul>
                     <img class="main-arrow move move_desktop" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/main-arrow.png" alt="scroll-up-arrow">
                 </div>
