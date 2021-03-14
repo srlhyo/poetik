@@ -795,7 +795,7 @@ img {
 }
 
 .shop__image {
-    // transform: scale(1.44);
+    transform: scale(1.44);
     &:hover {
         transform: scale(2.5);
         transition: transform 2s ease;
