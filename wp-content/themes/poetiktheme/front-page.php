@@ -425,7 +425,7 @@
             </div>
         </div>
             <div class="popup popup_contact">
-                <?php echo do_shortcode( '[contact-form-7 id="4" title="Contact form 1"]' ); ?>
+                <?php echo do_shortcode( '[contact-form-7 id="18" title="Contact form 1"]' ); ?>
                 <span class="popup__close-btn popup_contact-closeBtn">X</span>
             </div>
     </section>
