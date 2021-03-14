@@ -796,3 +796,11 @@ img {
             animation-name: moveUpMobile;
   }
 }
+.shop__image:hover {
+  transform: scale(2.5);
+  transition: transform 2s ease;
+}
+
+.shop__item-wrapper {
+  overflow: hidden;
+}
