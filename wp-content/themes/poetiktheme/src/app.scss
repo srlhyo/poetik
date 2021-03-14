@@ -191,7 +191,7 @@ img {
 }
 
 .hero {
-    background-color: rosybrown;
+    // background-color: rosybrown;
     padding: 10em 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -561,7 +561,6 @@ img {
     color: white;
     background-color: transparent;
     font-size: 18px;
-    text-transform: uppercase;
     font-weight: 700;
 }
 
@@ -578,21 +577,6 @@ img {
     justify-content: center;
     align-items: flex-end;
     gap: 1em;
-}
-
-// NEWSLETTER error message
-
-.alert {
-    padding: 10px;
-    
-}
-
-.alert.error {
-    color: #ff4343;
-}
-
-.alert.success {
-    color: #75f575;
 }
 
 @media only screen and (min-width: 748px) {
@@ -626,6 +610,13 @@ img {
         justify-content: center;
         gap: 0;
     }
+}
+
+// contact-form-7 plugin NEWSLETTER
+#wpcf7-f21-o2 .ajax-loader {
+    width: 0;
+    height: 0;
+    margin: 0;
 }
 
 //FOOTER
@@ -733,7 +724,7 @@ img {
     font-size: 14px;
 }
 
-.wpcf7 {
+#wpcf7-f18-o1 {
     font-size: 14px;
     color:#4b3a35;
     width: 40%;
@@ -752,7 +743,7 @@ img {
 }
 
 @media only screen and (max-width: 1000px) {
-    .wpcf7 {
+    #wpcf7-f18-o1 {
         width: 90%;
     }
 }

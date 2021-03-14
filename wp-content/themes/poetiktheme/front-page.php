@@ -24,7 +24,8 @@
                 </ul>
             </div>
             <div class="hero spacing" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/flying.jpeg'),
-                                    radial-gradient(#f90, #fcb900);">
+                                    radial-gradient(#c3461d, #ff9600);">
+                                    <!-- radial-gradient(#f90, #fcb900);"> -->
                 <h2 class="title">Interview for The Spotlight</h2>
                 <p>Get your popocorns, sit back and enjoy it!</p>
                 <button id="trailer" class="btn btn_news">watch the interview</button>
@@ -425,7 +426,7 @@
             </div>
         </div>
             <div class="popup popup_contact">
-                <?php echo do_shortcode( '[contact-form-7 id="18" title="Contact form 1"]' ); ?>
+                <?php echo do_shortcode( '[contact-form-7 id="4" title="Contact form 1"]' ); ?>
                 <span class="popup__close-btn popup_contact-closeBtn">X</span>
             </div>
     </section>
@@ -434,43 +435,7 @@
         <div class="container">
             <h2 class="title newsletter__large-screen-title">stay up to date</h2>
             <h2 class="title newsletter__small-screen-title">newsletter</h2>
-            <form class="newsletter__form" action="#subscribeNewsletter" method="POST" name="subscribe">
-                <?php
-                    $userEmail = ""; // first the field is empty
-                    if(isset($_POST['subscribe'])) { // if subscribe button is clicked
-                        $userEmail = $_POST['email']; // getting user email
-                        if(filter_var($userEmail, FILTER_VALIDATE_EMAIL)) { // validating user entered email
-                            $subject = "Thanks for subscribing - Poetik";
-                            $message = "Thanks for subscribing to Poetik page. You'll always recieve latest updates. And your information won't be shared or sold.";
-                            $sender = "From: helioschultz_1@msn.com";
-                            if(mail($userEmail, $subject,$message, $sender)) { // php function to send email
-                                ?>
-                                <!-- Show a success message if email is sent -->
-                                <p class="alert success">Thanks for subscribing.</p>
-                                <?php
-                                $userEmail = ""; //field is empty
-                            } else {
-                                ?>
-                                <!-- Show an error message if email can't be sent -->
-                                <p class="alert error">Failed while sending your email!</p>
-                                <?php
-                            }
-                        } else {
-                            ?>
-                                <!-- Show an error message if email is not valid -->
-                                <p class="alert error"><?php echo $userEmail; ?> is not a valid email!</p>
-                            <?php 
-                        }
-                    } 
-                ?>
-                <div class="newsletter__form-controllers">
-                    <input class="newsletter__email" name="email" type="text" placeholder="email address" required value="<?php echo $userEmail; ?>">
-                    <button class="btn btn__join" name="subscribe">join</button>
-                </div>
-                <div class="link">
-                    <p>terms</p>
-                </div>
-            </form>
+            <?php echo do_shortcode('[contact-form-7 id="21" title="my newsletter form"]'); ?>
         </div>
     </section>
 
