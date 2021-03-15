@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poetik Website</title>
-    
 
     <?php wp_head() ?>
 </head>
@@ -24,7 +23,8 @@
                 </ul>
             </div>
             <div class="hero spacing" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/flying.jpeg'),
-                                    radial-gradient(#f90, #fcb900);">
+                                    radial-gradient(#c3461d, #ff9600);">
+                                    <!-- radial-gradient(#f90, #fcb900);"> -->
                 <h2 class="title">Interview for The Spotlight</h2>
                 <p>Get your popocorns, sit back and enjoy it!</p>
                 <button id="trailer" class="btn btn_news">watch the interview</button>
@@ -425,24 +425,16 @@
             </div>
         </div>
             <div class="popup popup_contact">
-                <?php echo do_shortcode( '[contact-form-7 id="29" title="Contact form 1"]' ); ?>
+                <?php echo do_shortcode( '[contact-form-7 id="4" title="Contact form 1"]' ); ?> <!-- id=18 when live -->
                 <span class="popup__close-btn popup_contact-closeBtn">X</span>
             </div>
     </section>
 
-    <section class="newsletter">
+    <section class="newsletter" id="subscribeNewsletter">
         <div class="container">
             <h2 class="title newsletter__large-screen-title">stay up to date</h2>
             <h2 class="title newsletter__small-screen-title">newsletter</h2>
-            <form class="newsletter__form">
-                <div class="newsletter__form-controllers">
-                    <input class="newsletter__email" type="text" placeholder="email address">
-                    <button class="btn btn__join">join</button>
-                </div>
-                <div class="link">
-                    <p>terms</p>
-                </div>
-            </form>
+            <?php echo do_shortcode('[contact-form-7 id="5" title="my newsletter form"]'); ?> <!-- id=21 when live -->
         </div>
     </section>
 
@@ -462,16 +454,16 @@
                 <div class="footer__author">
                     <p>&copy; 2021 devduo</p>
                 </div>
-                <div class="footer__links-wrapper">
+                <div class="footer__links-wrapper" id="mylinks">
                     <ul class="footer__links footer__links_left">
                         <li class="footer__author-link">&copy; 2021 devduo</li>
-                        <li><a href="#">privacy policy</a></li>
-                        <li><a href="#">cookies settings</a></li>
+                        <li><a href="#mylinks">privacy policy</a></li>
+                        <li><a href="#mylinks">cookies settings</a></li>
                     </ul>
                     <ul class="footer__links footer__links_right">
-                        <li><a href="#">terms of use</a></li>
-                        <li><a href="#">ad choice</a></li>
-                        <li><a href="#">cookies policy</a></li>
+                        <li><a href="#mylinks">terms of use</a></li>
+                        <li><a href="#mylinks">ad choice</a></li>
+                        <li><a href="#mylinks">cookies policy</a></li>
                     </ul>
                     <img class="main-arrow move move_desktop" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/main-arrow.png" alt="scroll-up-arrow">
                 </div>
