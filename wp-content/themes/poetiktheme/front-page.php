@@ -50,7 +50,7 @@
                 <p>Poetik is still working, spreading the true essence of the hiphop culture, where he's been used as a reference and influence for many aspiring and made artists.</p>
             </div>
             <div class="about__small-screen">
-                <p>Poetik started his music career back in 2005, with a group called Freestyle Family - a union of various elements fom different groups in the UK. They all had the same objectives: expand the Portuguese HipHop culture in the UK. Along with the 3FS (Freestyle Family) Poetik launched 5 mixtapes: Senoro total; The F-files; Taking Over vol 1, Taking Over vol 2 and Family Bizness. </p>
+                <p>Poetik started his music career back in 2005, with a group called Freestyle Family - a union of various elements fom different groups in the UK. They all had the same objectives: expand the Portuguese HipHop culture in the UK. Along with the 3SF (Freestyle Family) Poetik launched 5 mixtapes: Senoro total; The F-files; Taking Over vol 1, Taking Over vol 2 and Family Bizness. </p>
                 <span class="link link_about">read more</span>
             </div>
         </div>
@@ -62,7 +62,7 @@
             <h2 class="modal__title">know poetik</h2>
             <div class="modal__text">
                 <p>Poetik started his music career back in 2005, with a group called Freestyle Family - a union of various elements fom different groups in the UK. They all had the same objectives: expand the Portuguese HipHop culture in the UK. Along with the 3FS (Freestyle Family) Poetik launched 5 mixtapes: Senoro total; The F-files; Taking Over vol 1, Taking Over vol 2 and Family Bizness. </p>
-                <p>In 2011, Poetik decide to launched his first solo project titled "Contra ventos & tempestades", followed by the second mixtape "Versos de Elite, in 2012. In the beginning of 2014, "Versos de Elite 2" is launched and in the end of November of 2017 Poetik launched the squel "Versos de elite 3".</p>
+                <p>In 2011, Poetik decided to launch his first solo project titled "Contra ventos & tempestades", followed by the second mixtape "Versos de Elite, in 2012. In the beginning of 2014, "Versos de Elite 2" is launched and in the end of November of 2017 Poetik launched the squel "Versos de elite 3".</p>
                 <p>Poetik is still working, spreading the true essence of the hiphop culture, where he's been used as a reference and influence for many aspiring and made artists.</p>
             </div>
             <img class="modal__arrow modal__arrow_about" src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/scroll-top.png" alt="scroll-up-arrow">
