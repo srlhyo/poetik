@@ -562,6 +562,7 @@ img {
     background-color: transparent;
     font-size: 18px;
     font-weight: 700;
+    letter-spacing: .05em;
 }
 
 .btn__join {
@@ -600,7 +601,7 @@ img {
     .newsletter__email {
         width: 380px;
         height: 60px;
-        text-transform: uppercase;
+        letter-spacing: .05em;
         font-size: $main-font-size;
         font-weight: 700;
     }
@@ -613,14 +614,18 @@ img {
 }
 
 // contact-form-7 plugin NEWSLETTER
-#wpcf7-f21-o2 .ajax-loader {
+#wpcf7-f5-o2 .ajax-loader { // for local develoment -> #wpcf7-f5-o2  live -> #wpcf7-f21-o2
     width: 0;
     height: 0;
     margin: 0;
 }
 
-//FOOTER
+// form error info boxes
+#wpcf7-f5-o2 .wpcf7-response-output {
+    margin: 3em 0.5em 1em;
+}
 
+//FOOTER
 .title_footer {
     font-size: 26px;
     font-style: normal;
@@ -724,7 +729,7 @@ img {
     font-size: 14px;
 }
 
-#wpcf7-f18-o1 {
+#wpcf7-f4-o1 {   // for local develoment -> #wpcf7-f4-o1  live -> #wpcf7-f18-o1
     font-size: 14px;
     color:#4b3a35;
     width: 40%;
@@ -743,16 +748,17 @@ img {
 }
 
 @media only screen and (max-width: 1000px) {
-    #wpcf7-f18-o1 {
+    #wpcf7-f4-o1 { // for local develoment -> #wpcf7-f4-o1  live -> #wpcf7-f18-o1
         width: 90%;
     }
 }
 
 //ANIMATIONS
 
-.btn_news {
+.btn_news,
+.btn_listen {
     animation-name: changeBg;
-    animation-iteration-count: 10;
+    animation-iteration-count: 20;
     animation-duration: 2s;
     animation-direction: alternate;
 }

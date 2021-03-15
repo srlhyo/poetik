@@ -523,6 +523,7 @@ img {
   background-color: transparent;
   font-size: 18px;
   font-weight: 700;
+  letter-spacing: 0.05em;
 }
 
 .btn__join {
@@ -561,7 +562,7 @@ img {
   .newsletter__email {
     width: 380px;
     height: 60px;
-    text-transform: uppercase;
+    letter-spacing: 0.05em;
     font-size: 18px;
     font-weight: 700;
   }
@@ -572,10 +573,14 @@ img {
     gap: 0;
   }
 }
-#wpcf7-f21-o2 .ajax-loader {
+#wpcf7-f5-o2 .ajax-loader {
   width: 0;
   height: 0;
   margin: 0;
+}
+
+#wpcf7-f5-o2 .wpcf7-response-output {
+  margin: 3em 0.5em 1em;
 }
 
 .title_footer {
@@ -676,13 +681,13 @@ img {
   font-size: 14px;
 }
 
-#wpcf7-f18-o1 {
+#wpcf7-f4-o1 {
   font-size: 14px;
   color: #4b3a35;
   width: 40%;
   padding-top: 60px;
 }
-#wpcf7-f18-o1 .btn {
+#wpcf7-f4-o1 .btn {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -695,15 +700,16 @@ img {
 }
 
 @media only screen and (max-width: 1000px) {
-  #wpcf7-f18-o1 {
+  #wpcf7-f4-o1 {
     width: 90%;
   }
 }
-.btn_news {
+.btn_news,
+.btn_listen {
   -webkit-animation-name: changeBg;
           animation-name: changeBg;
-  -webkit-animation-iteration-count: 10;
-          animation-iteration-count: 10;
+  -webkit-animation-iteration-count: 20;
+          animation-iteration-count: 20;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-direction: alternate;

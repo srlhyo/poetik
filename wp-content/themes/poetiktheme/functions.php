@@ -21,3 +21,22 @@ function devduo_register_scripts() {
 }
 
 add_action('wp_enqueue_scripts', 'devduo_register_scripts');
+
+
+// https://contactform7.com/loading-javascript-and-stylesheet-only-when-it-is-necessary/
+// https://www.peterbateman.co.uk/how-to-stop-contact-form-7-from-loading-on-all-pages/
+
+add_filter( 'wpcf7_load_js', '__return_false' );
+add_filter( 'wpcf7_load_css', '__return_false' );
+
+add_action('wp_enqueue_scripts', 'load_wpcf7_scripts');
+function load_wpcf7_scripts() {
+  if ( is_front_page('front-page') ) {
+    if ( function_exists( 'wpcf7_enqueue_scripts' ) ) {
+      wpcf7_enqueue_scripts();
+    }
+    if ( function_exists( 'wpcf7_enqueue_styles' ) ) {
+      wpcf7_enqueue_styles();
+    }
+  }
+}

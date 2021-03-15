@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poetik Website</title>
-    
 
     <?php wp_head() ?>
 </head>
@@ -426,7 +425,7 @@
             </div>
         </div>
             <div class="popup popup_contact">
-                <?php echo do_shortcode( '[contact-form-7 id="4" title="Contact form 1"]' ); ?>
+                <?php echo do_shortcode( '[contact-form-7 id="4" title="Contact form 1"]' ); ?> <!-- id=18 when live -->
                 <span class="popup__close-btn popup_contact-closeBtn">X</span>
             </div>
     </section>
@@ -435,7 +434,7 @@
         <div class="container">
             <h2 class="title newsletter__large-screen-title">stay up to date</h2>
             <h2 class="title newsletter__small-screen-title">newsletter</h2>
-            <?php echo do_shortcode('[contact-form-7 id="21" title="my newsletter form"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="5" title="my newsletter form"]'); ?> <!-- id=21 when live -->
         </div>
     </section>
 
