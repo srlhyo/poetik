@@ -133,7 +133,7 @@
         <div class="container">
             <h2 class="title">tour dates</h2>
             <p class="no-dates">There are currently no forthcoming gigs confirmed. Sign up to recieve updates.</p>
-            <!-- <div class="tour__cards tour__cards_mobile">
+            <div class="tour__cards tour__cards_mobile">
                 <div class="card">
                     <p class="tour__date">jun 2</p>
                     <h3 class="tour__city">cardiff, cf, uk</h3>
@@ -266,7 +266,7 @@
                 </div>
             </div>
             
-            <span class="link link_tour">more dates</span> -->
+            <span class="link link_tour">more dates</span>
         </div>
     </section>
 

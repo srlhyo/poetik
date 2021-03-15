@@ -360,13 +360,16 @@ img {
 }
 
 //TOUR DATES
+.link_tour {
+    display: none;
+}
 
 .no-dates {
     font-style: italic;
     text-align: center;
 }
 
-.tour__cards_tablet, .tour__cards_desktop {
+.tour__cards_mobile, .tour__cards_tablet, .tour__cards_desktop {
     display: none;
 }
 
@@ -440,7 +443,7 @@ img {
 
 @media only screen and (min-width: 768px) {
     .tour__cards_tablet {
-        display: block;
+        display: none;
         width: 530px;
         margin: 0 auto;
         padding-left: 40px;
@@ -461,7 +464,7 @@ img {
     }
 
     .modal__cards_tablet {
-        display: block;
+        display: none;
     }
 
     .modal__cards_mobile {
@@ -483,7 +486,7 @@ img {
     }
 
     .tour__cards_desktop {
-        display: block;
+        display: none;
         width: 900px;
         margin: 0 auto;
         padding-left: 100px;
@@ -615,6 +618,15 @@ img {
         display:flex;
         justify-content: center;
         gap: 0;
+    }
+}
+
+@media only screen and (max-width: 383px) {
+
+    .newsletter__form-controllers {
+        display:flex;
+        justify-content: center;
+        gap: 0.1em;
     }
 }
 
