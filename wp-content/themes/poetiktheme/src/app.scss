@@ -359,7 +359,12 @@ img {
     font-size: 0.8em;
 }
 
-//TOUR
+//TOUR DATES
+
+.no-dates {
+    font-style: italic;
+    text-align: center;
+}
 
 .tour__cards_tablet, .tour__cards_desktop {
     display: none;
@@ -614,7 +619,7 @@ img {
 }
 
 // contact-form-7 plugin NEWSLETTER
-#wpcf7-f5-o2 .ajax-loader { // for local develoment -> #wpcf7-f5-o2  live -> #wpcf7-f21-o2
+#wpcf7-f21-o2 .ajax-loader { // for local develoment -> #wpcf7-f5-o2  live -> #wpcf7-f21-o2
     width: 0;
     height: 0;
     margin: 0;
@@ -729,7 +734,7 @@ img {
     font-size: 14px;
 }
 
-#wpcf7-f4-o1 {   // for local develoment -> #wpcf7-f4-o1  live -> #wpcf7-f18-o1
+#wpcf7-f18-o1 {   // for local develoment -> #wpcf7-f4-o1  live -> #wpcf7-f18-o1
     font-size: 14px;
     color:#4b3a35;
     width: 40%;
@@ -748,7 +753,7 @@ img {
 }
 
 @media only screen and (max-width: 1000px) {
-    #wpcf7-f4-o1 { // for local develoment -> #wpcf7-f4-o1  live -> #wpcf7-f18-o1
+    #wpcf7-f18-o1 { // for local develoment -> #wpcf7-f4-o1  live -> #wpcf7-f18-o1
         width: 90%;
     }
 }
