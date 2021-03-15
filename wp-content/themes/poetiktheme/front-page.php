@@ -131,8 +131,9 @@
 
     <section class="tour">
         <div class="container">
-            <h2 class="title">tour</h2>
-            <div class="tour__cards tour__cards_mobile">
+            <h2 class="title">tour dates</h2>
+            <p class="no-dates">There are currently no forthcoming gigs confirmed. Sign up to recieve updates.</p>
+            <!-- <div class="tour__cards tour__cards_mobile">
                 <div class="card">
                     <p class="tour__date">jun 2</p>
                     <h3 class="tour__city">cardiff, cf, uk</h3>
@@ -265,7 +266,7 @@
                 </div>
             </div>
             
-            <span class="link link_tour">more dates</span>
+            <span class="link link_tour">more dates</span> -->
         </div>
     </section>
 
@@ -422,10 +423,20 @@
                     </p>
                     <button class="btn btn_contact">contact me</button>
                 </article>
+                <article class="shop__item spacing">
+                    <div class="shop__item-wrapper">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-6.jpeg" alt="" class="shop__image">
+                    </div>
+                    <h3 class="shop__title">a prototype design</h3>
+                    <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
+                        the info shortly.
+                    </p>
+                    <button class="btn btn_contact">contact me</button>
+                </article>
             </div>
         </div>
             <div class="popup popup_contact">
-                <?php echo do_shortcode( '[contact-form-7 id="4" title="Contact form 1"]' ); ?> <!-- id=18 when live -->
+                <?php echo do_shortcode( '[contact-form-7 id="18" title="Contact form 1"]' ); ?> <!-- id=18 when live -->
                 <span class="popup__close-btn popup_contact-closeBtn">X</span>
             </div>
     </section>
@@ -434,7 +445,7 @@
         <div class="container">
             <h2 class="title newsletter__large-screen-title">stay up to date</h2>
             <h2 class="title newsletter__small-screen-title">newsletter</h2>
-            <?php echo do_shortcode('[contact-form-7 id="5" title="my newsletter form"]'); ?> <!-- id=21 when live -->
+            <?php echo do_shortcode('[contact-form-7 id="21" title="my newsletter form"]'); ?> <!-- id=21 when live -->
         </div>
     </section>
 
