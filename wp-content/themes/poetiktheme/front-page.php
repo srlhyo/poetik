@@ -353,17 +353,17 @@
             <div class="photos__slider">
             </div>
             <div class="photos__grid">
-                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/staring.jpeg')">
+                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/smiling.jpeg')">
+                </div>
+                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/p-2.jpeg')">
                 </div>
                 <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/live.jpeg')">
                 </div>
-                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/flying.jpeg')">
-                </div>
                 <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/bridge.jpeg')">
                 </div>
-                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/smiling.jpeg')">
-                </div>
                 <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/serious.jpeg')">
+                </div>
+                <div class="photo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/p-3.jpeg')">
                 </div>
             </div>
         </div>
@@ -375,9 +375,9 @@
             <div class="shop__grid">
                 <article class="shop__item spacing">
                     <div class="shop__item-wrapper">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-1.jpg" alt="" class="shop__image">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-2.jpg" alt="" class="shop__image">
                     </div>
-                    <h3 class="shop__title">a prototype design</h3>
+                    <h3 class="shop__title">prototype design <span class="shop__shirt-number">1</span></h3>
                     <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
                         the info shortly.
                     </p>
@@ -385,9 +385,9 @@
                 </article>
                 <article class="shop__item spacing">
                     <div class="shop__item-wrapper">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-2.jpg" alt="" class="shop__image">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-1.jpg" alt="" class="shop__image">
                     </div>
-                    <h3 class="shop__title">a prototype design</h3>
+                    <h3 class="shop__title">prototype design <span class="shop__shirt-number">2</span></h3>
                     <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
                         the info shortly.
                     </p>
@@ -397,17 +397,7 @@
                     <div class="shop__item-wrapper">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-3.jpg" alt="" class="shop__image">
                     </div>
-                    <h3 class="shop__title">a prototype design</h3>
-                    <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
-                        the info shortly.
-                    </p>
-                    <button class="btn btn_contact">contact me</button>
-                </article>
-                <article class="shop__item spacing">
-                    <div class="shop__item-wrapper">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-4.jpg" alt="" class="shop__image">
-                    </div>
-                    <h3 class="shop__title">a prototype design</h3>
+                    <h3 class="shop__title">prototype design <span class="shop__shirt-number">3</span></h3>
                     <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
                         the info shortly.
                     </p>
@@ -417,7 +407,17 @@
                     <div class="shop__item-wrapper">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-5.jpg" alt="" class="shop__image">
                     </div>
-                    <h3 class="shop__title">a prototype design</h3>
+                    <h3 class="shop__title">prototype design <span class="shop__shirt-number">4</span></h3>
+                    <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
+                        the info shortly.
+                    </p>
+                    <button class="btn btn_contact">contact me</button>
+                </article>
+                <article class="shop__item spacing">
+                    <div class="shop__item-wrapper">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-4.jpg" alt="" class="shop__image">
+                    </div>
+                    <h3 class="shop__title">prototype design <span class="shop__shirt-number">5</span></h3>
                     <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
                         the info shortly.
                     </p>
@@ -427,7 +427,7 @@
                     <div class="shop__item-wrapper">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/t-6.jpeg" alt="" class="shop__image">
                     </div>
-                    <h3 class="shop__title">a prototype design</h3>
+                    <h3 class="shop__title">prototype design <span class="shop__shirt-number">6</span></h3>
                     <p class="shop__description">Feel free to contact Poetik if you're interested in the product. He'll get back to you with
                         the info shortly.
                     </p>
@@ -436,7 +436,7 @@
             </div>
         </div>
             <div class="popup popup_contact">
-                <?php echo do_shortcode( '[contact-form-7 id="18" title="Contact form 1"]' ); ?> <!-- id=18 when live -->
+                <?php echo do_shortcode( '[contact-form-7 id="18" title="Contact form 1"]' ); ?> <!-- id=4 local id=18 live -->
                 <span class="popup__close-btn popup_contact-closeBtn">X</span>
             </div>
     </section>
@@ -445,7 +445,7 @@
         <div class="container">
             <h2 class="title newsletter__large-screen-title">stay up to date</h2>
             <h2 class="title newsletter__small-screen-title">newsletter</h2>
-            <?php echo do_shortcode('[contact-form-7 id="21" title="my newsletter form"]'); ?> <!-- id=21 when live -->
+            <?php echo do_shortcode('[contact-form-7 id="21" title="my newsletter form"]'); ?> <!-- id=5 local id=21 live -->
         </div>
     </section>
 

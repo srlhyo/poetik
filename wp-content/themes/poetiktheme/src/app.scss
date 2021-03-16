@@ -543,6 +543,13 @@ img {
     border-radius: 20px;
 }
 
+.shop__shirt-number {
+    padding: 0.1em 0.4em;
+    border-radius: 50%;
+    background-color: #F5D39C;
+    color: black;
+}
+
 //NEWSLETTER
 
 .newsletter__large-screen-title {
@@ -638,7 +645,7 @@ img {
 }
 
 // form error info boxes
-#wpcf7-f21-o2 .wpcf7-response-output {
+#wpcf7-f21-o2 .wpcf7-response-output { // for local develoment -> #wpcf7-f5-o2  live -> #wpcf7-f21-o2
     margin: 3em 0.5em 1em;
 }
 
